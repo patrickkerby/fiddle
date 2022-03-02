@@ -1,0 +1,24 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: footer_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Footer Section Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: footer_intro
+        field:
+          input_type: text
+          antlers: false
+          display: 'Footer Introduction'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above

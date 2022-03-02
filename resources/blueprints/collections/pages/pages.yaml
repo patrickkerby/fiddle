@@ -1,0 +1,352 @@
+title: Pages
+sections:
+  header:
+    display: 'Intro Header'
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: background_image
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: false
+          max_files: 1
+          display: 'Background Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: header_content
+        field:
+          antlers: false
+          display: 'Header Content'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  about_section:
+    display: 'About Section'
+    fields:
+      -
+        handle: about_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'About Section Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: about_intro
+        field:
+          input_type: text
+          antlers: false
+          display: 'About Introduction'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: about_content
+        field:
+          antlers: false
+          display: 'About Content'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+  partners_section:
+    display: 'Partners Section'
+    fields:
+      -
+        handle: partners_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Partners Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: partners_intro
+        field:
+          antlers: false
+          display: 'Partners Introduction'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+      -
+        handle: partners
+        field:
+          fields:
+            -
+              handle: partner_name
+              field:
+                input_type: text
+                antlers: false
+                display: 'Partner Name'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+            -
+              handle: partner_category
+              field:
+                input_type: text
+                antlers: false
+                display: 'Partner Category'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+            -
+              handle: partner_description
+              field:
+                antlers: false
+                display: 'Partner Description'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+            -
+              handle: partner_logo
+              field:
+                mode: list
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: 'Partner Logo'
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+            -
+              handle: partner_url
+              field:
+                display: 'Partner Website Link'
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+            -
+              handle: partner_bg
+              field:
+                mode: list
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: 'Partner Background Image'
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+            -
+              handle: social_media
+              field:
+                mode: keyed
+                keys:
+                  instagram: null
+                  facebook: null
+                  twitter: null
+                display: 'Social Media Accounts'
+                type: array
+                icon: array
+                listable: hidden
+                instructions_position: above
+            -
+              handle: map_x
+              field:
+                display: 'Map X Axis'
+                type: float
+                icon: float
+                listable: hidden
+                instructions_position: above
+                width: 33
+            -
+              handle: map_y
+              field:
+                display: 'Map Y Axis'
+                type: float
+                icon: float
+                listable: hidden
+                instructions_position: above
+                width: 33
+          mode: stacked
+          add_row: 'Add Partner'
+          reorderable: true
+          display: Partners
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+  map_section:
+    display: 'Map Section'
+    fields:
+      -
+        handle: map_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Map Section Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: map_intro
+        field:
+          input_type: text
+          antlers: false
+          display: 'Map Introduction'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: directions_url
+        field:
+          display: 'Directions URL'
+          type: link
+          icon: link
+          instructions: 'Paste in a directions link from Google Maps!'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: map_image
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Map Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+  area_section:
+    display: 'Area Section'
+    fields:
+      -
+        handle: area_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Area Section Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: area_intro
+        field:
+          antlers: false
+          display: 'Area Introduction'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+      -
+        handle: area_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: false
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Area Content'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
+        handle: area_images
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Area Images'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+  social_section:
+    display: 'Social Section'
+    fields:
+      -
+        handle: social_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Social Media Section Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: social_intro
+        field:
+          input_type: text
+          antlers: false
+          display: 'Social Media Introduction'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: social_test_image
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'social test image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above

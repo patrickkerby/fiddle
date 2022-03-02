@@ -1,0 +1,100 @@
+<section class="intro-banner" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ background_image }});">
+    <div class="content">
+        <h1 class="flexible">{{ title }}</h1>
+        <h2>{{ header_content }}</h2>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="row">
+        <span class="section-label">{{ about_title }}</span>
+        <div class="content">
+            <h2>{{ about_intro }}</h2>
+            <p class="text-medium">{{ about_content }}</p>
+        </div>
+    </div>
+</section>
+<section class="partners" id="partners">
+    <div class="row">
+        <div class="content-left">
+            <span class="section-label">{{ partners_title }}</span>
+            <h2>{{ partners_intro }}</h2>
+            <nav>
+                <ul>
+                    {{ partners }}
+                        <li {{ if index === 0  }} class="active" {{ /if }}>{{ partner_name }} <span>{{ partner_category }}</span></li>
+                    {{ /partners }}
+                </ul>
+            </nav>
+        </div>
+        <div class="content-right">
+            {{ partners:0 }}
+                <div>
+                    {{  if partner_logo }}
+                        {{ svg src="{{ partner_logo }}" }}
+                    {{ /if }}
+                    <h2>{{ partner_name }} </h2>
+                    {{ if social_media }}
+                        <ul class="social_media">
+                        {{ social_media }}
+                            {{ if instagram }}
+                                <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}">{{ instagram }}</a></li>
+                            {{ /if }}
+                            {{ if facebook }}
+                                <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}">{{ facebook }}</a></li>
+                            {{ /if }}
+                            {{ if twitter }}
+                                <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}">{{ twitter }}</a></li>
+                            {{ /if }}
+                        {{ /social_media }}
+                        </ul>                    
+                    {{ /if }}
+                    <p class="text-medium">{{ partner_description }}</p>
+                    <a class="text-small external-url" href="{{ partner_url }}">Visit Website</a>
+                </div>
+                <img class="bg" src="{{ partner_bg }}" />
+            {{ /partners:0 }}
+        </div>
+    </div>
+</section>
+<section class="map" id="map">
+    <div class="content">
+        <span class="section-label">{{ map_title }}</span>
+        <h2>{{ map_intro }}</h2>
+        <a class="directions text-small external-url" href="{{ directions_url }}">Get Directions</a>
+    </div>
+    <div id="map_visual">
+        {{ partners }}
+            <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ partner_name }}</h4>
+        {{ /partners }}
+        <img src="{{ map_image }}" />
+    </div>
+</section>
+<section class="area" id="area">
+    <span class="section-label">{{ area_title }}</span>
+    <div class="content">
+        <h2>{{ area_intro }}</h2>
+        <div class="text-medium">{{ area_content }}</div>
+    </div>
+    <div class="gallery slideshow">
+        {{ area_images }}
+            <div class="slide-item">
+                <img src="{{ url }}" />
+            </div>
+        {{ /area_images }}
+    </div>
+</section>
+<section class="social" id="social">
+    <span class="section-label">{{ social_title }}</span>
+    <h2>{{ social_intro }}</h2>
+    <div class="grid">
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+        <div><img src="{{ social_test_image }}" /></div>
+    </div>
+</section>
