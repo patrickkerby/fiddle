@@ -781,6 +781,7 @@ button.slick-next::after {
 
   .social .row {
     overflow: hidden;
+    width: 100%;
   }
   
   .social .grid {
