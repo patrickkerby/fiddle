@@ -110,7 +110,15 @@ li {
   flex-direction: row;
 }
 
+.mobile-display {
+  display: none;
+}
+
 @media (max-width: 580px) {
+  .mobile-display {
+    display: block;
+  }
+
   .row {
     flex-direction: column;
   }
@@ -501,6 +509,50 @@ a.external-url {
   border-radius: 1rem;
   width: 1rem;
   height: 1rem;
+}
+
+@media (max-width: 580px) {
+  #map_visual {
+    margin-top: 1.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  #map_visual .marker {
+    order: 2;
+    position: static;
+    background: none;
+    box-shadow: none;
+    justify-content: left;
+    height: unset;
+    padding: 0;
+    margin: 1rem 0 1rem 1.5rem;
+  }
+
+  #map_visual div {
+    position: relative;
+  }
+
+  #map_visual span {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    text-align: center;
+    line-height: 2rem;
+    font-family: 'swear-display', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+  }
+
+  #map_visual .marker::before {
+    content: none;
+  }
+
+  #map_visual img {
+    order: 1;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Area Section */

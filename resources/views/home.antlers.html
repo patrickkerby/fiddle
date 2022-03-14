@@ -64,9 +64,14 @@
     </div>
     <div id="map_visual">
         {{ partners }}
-            <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ partner_name }}</h4>
+        <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ partner_name }}</h4>
         {{ /partners }}
-        <img src="{{ map_image }}" />
+        <div>
+            <img src="{{ map_image }}" />
+            {{ partners }}
+                <span class="mobile-display" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ increment from="1" }}</span>                
+            {{ /partners }}
+        </div>
     </div>
 </section>
 <section class="area" id="area">
