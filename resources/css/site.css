@@ -778,6 +778,10 @@ button.slick-next::after {
   .social {
     margin: 3.5rem 0;
   }
+
+  .social .row {
+    overflow: hidden;
+  }
   
   .social .grid {
     display: flex;
