@@ -476,7 +476,13 @@ a.external-url {
 .map .external-url {
   color: #618B4A;
   border-color: #618B4A;
-  padding: 0 0 0.25rem 2.5rem;
+  padding: 0 0 0.4rem 0;
+}
+
+.map .external-url svg {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 #map_visual {
@@ -810,24 +816,41 @@ footer {
 
 footer .row {
   border-bottom: 1px solid #AFBC88;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+footer .row div {
+  width: 40%;
+  margin-right: 2%;
 }
 
 footer h2 {
-  width: 40%;
-  margin-right: 2%;
+  width: 98%;
 }
 
 footer ul {
   width: 58%;
   display: block;
   column-count: 2;
-  margin-bottom: 6.5rem;
+  column-gap: 4rem;
 }
 
 footer ul li a {
   font-family: 'swear-display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 500;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+}
+
+footer ul li svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.15rem;
+  position: relative;
+  top: 3px;
 }
 
 footer .colophon {
@@ -841,12 +864,56 @@ footer .colophon {
   justify-content: center;
 }
 
+@media (max-width: 1270px) {
+  footer .row div {
+    width: 35%;
+  }
+
+  footer ul {
+    width: 63%;
+  }
+
+  footer ul li svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: -3px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1110px) {
+  footer ul li svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  footer .row {
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  footer .row div {
+    width: 50%;
+  }
+
+  footer ul {
+    column-count: 1;
+    width: auto;
+  }
+
+  footer ul li a {
+    padding: 0.1rem 0;
+  }
+}
+
 @media (max-width: 580px) {
   footer {
     width: calc(100% - 3rem);
   }
 
-  footer h2 {
+  footer .row div {
     width: 100%;
     margin: 0;
   }
@@ -854,7 +921,6 @@ footer .colophon {
   footer ul {
     width: 100%;
     column-count: 1;
-    margin-top: 2rem;
   }
 
   footer ul li a {
