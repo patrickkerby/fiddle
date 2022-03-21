@@ -5,7 +5,7 @@ title: 'Welcome to the gorgeous Fiddle Ridge'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 44bed780-3406-4295-bfd5-fc7af693beca
-updated_at: 1646179523
+updated_at: 1647466935
 background_image: Header.jpg
 header_content: 'Fiddle Ridge is located 10 minutes west of Hinton, AB at the edge of Jasper National Park, overlooking the Rocky Mountains.'
 about_title: About
@@ -43,17 +43,19 @@ partners:
   -
     partner_name: 'Jasper East Cabins'
     partner_category: Accommodation
-    partner_description: null
+    partner_description: 'This is a description for Jasper East Cabins'
     partner_logo: null
     partner_url: null
     partner_bg: null
-    social_media: {  }
+    social_media:
+      instagram: '#'
+      facebook: '#'
     map_x: 45.0
     map_y: 50.0
   -
     partner_name: 'Juniper Pizza Pies'
     partner_category: 'Food & Drink'
-    partner_description: null
+    partner_description: 'HEYYYYY OOOO it''s juniper'
     partner_logo: null
     partner_url: null
     partner_bg: null
@@ -63,7 +65,7 @@ partners:
   -
     partner_name: 'Stone Peak Restaurant'
     partner_category: 'Food & Drink'
-    partner_description: null
+    partner_description: 'and peaks is here too, good good'
     partner_logo: null
     partner_url: null
     partner_bg: null
@@ -73,7 +75,7 @@ partners:
   -
     partner_name: 'Happy Habit Hotel'
     partner_category: Accommodation
-    partner_description: null
+    partner_description: 'Happy Habit? Happy Hobbit? Happy Hobbit.'
     partner_logo: null
     partner_url: null
     partner_bg: null

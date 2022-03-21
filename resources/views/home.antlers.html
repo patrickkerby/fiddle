@@ -1,4 +1,4 @@
-<section class="intro-banner" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ background_image }});">
+<section class="intro-banner" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ background_image }}');">
     <div class="content">
         <h1 class="flexible">{{ title }}</h1>
         <h2>{{ header_content }}</h2>
@@ -15,44 +15,43 @@
 </section>
 <section class="partners" id="partners">
     <div class="row">
-        <div class="content-left">
+        <div class="container">
             <span class="section-label">{{ partners_title }}</span>
             <h2>{{ partners_intro }}</h2>
-            <nav>
-                <ul>
+            <div>
+                <nav class="tabs">
                     {{ partners }}
-                        <li {{ if index === 0  }} class="active" {{ /if }}>{{ partner_name }} <span>{{ partner_category }}</span></li>
+                        <input type="radio" id="tab-1-{{ index }}" name="tab-group-1" {{ if index === 0  }} checked {{ /if }}>
+                        <label for="tab-1-{{ index }}">{{ partner_name }} <span>{{ partner_category }}</span></label>
+                        <div class="content">
+                            <div>
+                                {{  if partner_logo }}
+                                    {{ svg src="{{ partner_logo }}" }}
+                                {{ /if }}
+                                <h2>{{ partner_name }} </h2>
+                                {{ if social_media }}
+                                    <ul class="social_media">
+                                    {{ social_media }} 
+                                        {{ if instagram }}
+                                            <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}">{{ instagram }}</a></li>
+                                        {{ /if }}
+                                        {{ if facebook }}
+                                            <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}">{{ facebook }}</a></li>
+                                        {{ /if }}
+                                        {{ if twitter }}
+                                            <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}">{{ twitter }}</a></li>
+                                        {{ /if }}
+                                    {{ /social_media }}
+                                    </ul>                    
+                                {{ /if }}
+                                <p class="text-medium">{{ partner_description }}</p>
+                                <a class="text-small external-url" href="{{ partner_url }}">Visit Website</a>
+                            </div>
+                            <img class="bg" src="{{ partner_bg }}" />
+                        </div>
                     {{ /partners }}
-                </ul>
-            </nav>
-        </div>
-        <div class="content-right">
-            {{ partners:0 }}
-                <div>
-                    {{  if partner_logo }}
-                        {{ svg src="{{ partner_logo }}" }}
-                    {{ /if }}
-                    <h2>{{ partner_name }} </h2>
-                    {{ if social_media }}
-                        <ul class="social_media">
-                        {{ social_media }}
-                            {{ if instagram }}
-                                <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}">{{ instagram }}</a></li>
-                            {{ /if }}
-                            {{ if facebook }}
-                                <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}">{{ facebook }}</a></li>
-                            {{ /if }}
-                            {{ if twitter }}
-                                <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}">{{ twitter }}</a></li>
-                            {{ /if }}
-                        {{ /social_media }}
-                        </ul>                    
-                    {{ /if }}
-                    <p class="text-medium">{{ partner_description }}</p>
-                    <a class="text-small external-url" href="{{ partner_url }}">Visit Website</a>
-                </div>
-                <img class="bg" src="{{ partner_bg }}" />
-            {{ /partners:0 }}
+                </nav>
+            </div>
         </div>
     </div>
 </section>
@@ -71,12 +70,12 @@
     </div>
     <div id="map_visual">
         {{ partners }}
-        <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ partner_name }}</h4>
+        <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%;">{{ partner_name }}</h4>
         {{ /partners }}
         <div>
             <img src="{{ map_image }}" />
             {{ partners }}
-                <span class="mobile-display" style="bottom:{{ map_y }}%; left: {{ map_x }}%">{{ increment from="1" }}</span>                
+                <span class="mobile-display" style="bottom:{{ map_y }}%; left: {{ map_x }}%;">{{ increment from="1" }}</span>                
             {{ /partners }}
         </div>
     </div>
@@ -98,7 +97,11 @@
 <section class="social" id="social">
     <span class="section-label">{{ social_title }}</span>
     <h2>{{ social_intro }}</h2>
+    {{ instagram_feed }}
+    <img src="{{ image }}">
+{{ /instagram_feed }}
     <div class="grid">
+    
         <div><img src="{{ social_test_image }}" /></div>
         <div><img src="{{ social_test_image }}" /></div>
         <div><img src="{{ social_test_image }}" /></div>

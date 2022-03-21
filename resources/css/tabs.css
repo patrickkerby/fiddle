@@ -1,0 +1,167 @@
+.partners nav label::before,
+.partners nav label::after,
+.tabs > [type=radio] + label::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid #618B4A;
+  border-right: 2px solid #618B4A;
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  top: 2.25rem;
+  left: 0;
+  opacity: 1;
+  transition: all 0.8s cubic-bezier(.45,.13,.55,1);
+}
+
+.partners nav label::after,
+.tabs > [type=radio] + label::after {
+  left: 0.45rem;
+}
+
+.tabs > [type=radio]:not(:checked) + label::before,
+.tabs > [type=radio]:not(:checked) + label::after {
+  opacity: 0;
+  padding-left: 0;
+}
+
+.partners nav label:hover::before,
+.partners nav label:hover::after,
+.tabs > [type=radio]:not(:checked) + label:hover::before,
+.tabs > [type=radio]:not(:checked) + label:hover::after,
+.tabs > [type=radio] + label::before,
+.tabs > [type=radio] + label::after {
+  opacity: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.tabs > [type=radio]:not(:checked) + label {
+  padding-left: 0;
+}
+
+.partners nav label:hover,
+.tabs > [type=radio] + label,
+.tabs > [type=radio]:not(:checked) + label:hover {
+  cursor: pointer;
+  padding-left: 1.75rem;
+}
+
+.partners nav span {
+  font-family: 'sofia-pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #618B4A;
+  margin-left: 0.75rem;
+  line-height: 5rem;
+}
+
+.partners .container {
+  width: 100%;
+  position: relative;
+}
+
+.partners .content {
+  width: 50%;
+  height: calc(100% + 5rem);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #222;
+}
+
+.partners .content div {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin: auto 10%;
+}
+
+.tabs > [type=radio] {
+  display: none;
+}
+
+.tabs > [type=radio] + label {
+  order: 1;
+  cursor: pointer;
+}
+
+.tabs > [type=radio] + label + * {
+  width: 50%;
+  order: 2;
+  transition: opacity 0.6s ease;
+  opacity: 1;
+}
+
+.tabs > [type=radio]:not(:checked) + label + * {
+  /* display: none !important; */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.tabs > [type=radio]:not(:checked) + label + img {
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.tabs > [type=radio]:not(:checked) + label + img {
+  /* display: none !important; */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Fairly major adjustments of the partners section for mid-size screens */
+@media (max-width: 880px) {
+  .tabs > [type=radio]:not(:checked) + label::before,
+  .tabs > [type=radio]:not(:checked) + label::after {
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+
+  .tabs > [type=radio] + label::before,
+  .tabs > [type=radio] + label::after {
+    left: unset;
+    right: 0;
+    transform: rotate(135deg);
+  }
+  
+  .tabs > [type=radio] + label::after {
+    top: 1.8rem;
+  }
+
+  .partners nav li::before,
+  .partners nav li::after {
+    transform: rotate(135deg);
+    top: 2.25rem;
+    left: unset;
+    right: 0;
+    opacity: 1;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .partners nav label:hover,
+  .tabs > [type=radio] + label,
+  .tabs > [type=radio]:not(:checked) + label:hover {
+    padding-left: 0;
+  }
+
+  .partners nav li.active::before,
+  .partners nav li.active::after {
+    transform: rotate(-45deg);
+  }
+
+  .partners nav li::after,
+  .partners nav li.active::after {
+    left: unset;
+    right: 0;
+    top: 1.8rem;
+  }
+
+  .tabs > [type=radio]:not(:checked) + label + .content {
+    position: relative;
+    z-index: -99999999;
+  }
+}
