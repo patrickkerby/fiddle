@@ -20,6 +20,6 @@ $(document).ready(function(){
 });
 
   var feed = new Instafeed({
-    accessToken: 'AQDVNU6cwmMDNgGtkEo_CWu-bnOxF4mzaW3meWgQYZXtyE27MCqWtEEFWltlghYVWHA5LfYqzIn8nzHIwRIapAAsfHpSGHn3VBH3rpFWoHOgWhvjW0W4EizRej1iGQMDCTZ8JryXCG9a1YpupPAFPWfVmUgriLlqm2IwZHXI24VwGlr4qcypm5bjqVfP7HXiZ7Je8FBlDz3HFdJV3xq1_JErE2a4C9kgdrjlEymauVAbNg'
+    accessToken: 'IGQVJWT1lxMUU3OHl3WUdVRXRqRzN5R0pXYjlrVjJEX25BVkE5OFUwQnJDWEtuWUFNUllMaGw3ZAmtjWjdKZAk9HZAzlJNXFKRENXWTZAGdGJoYUhyNjBvZA0t4N1U2ckg3bjlZAODlkVzNWVUpEN0FZAOUZArVTFBM2xoSUNpbkRN'
   });
   feed.run();
