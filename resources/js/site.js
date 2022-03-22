@@ -19,11 +19,6 @@ $(document).ready(function(){
   });
 });
 
-  var feed = new Instafeed({
-    accessToken: 'IGQVJWT1lxMUU3OHl3WUdVRXRqRzN5R0pXYjlrVjJEX25BVkE5OFUwQnJDWEtuWUFNUllMaGw3ZAmtjWjdKZAk9HZAzlJNXFKRENXWTZAGdGJoYUhyNjBvZA0t4N1U2ckg3bjlZAODlkVzNWVUpEN0FZAOUZArVTFBM2xoSUNpbkRN'
-  });
-  feed.run();
-
   // create two separate instances of Instafeed
 var bontonFeed = new Instafeed({
   target: 'bonton',
@@ -33,8 +28,8 @@ var bontonFeed = new Instafeed({
 });
 var rbgFeed = new Instafeed({
   target: 'riverbendgardens',
-  clientId: '728851544',
-  accessToken: 'IGQVJWT1lxMUU3OHl3WUdVRXRqRzN5R0pXYjlrVjJEX25BVkE5OFUwQnJDWEtuWUFNUllMaGw3ZAmtjWjdKZAk9HZAzlJNXFKRENXWTZAGdGJoYUhyNjBvZA0t4N1U2ckg3bjlZAODlkVzNWVUpEN0FZAOUZArVTFBM2xoSUNpbkRN'
+  clientId: '3837908',
+  accessToken: 'IGQVJVWUFEOVBnT2REeVlWQ3FBMTZAiZAjBRY3lFWFdZAWWYyRXFpeXJnQUFqN3Y0YVBRSGVhQThUck1pNnU1OHdKSmplM2JHNGpBZAmJmNV8zQ1gxYWplRTJCUHI3eU1XLXZAhd3EzRklfek5MaFJaWXZAjQ0oxX3pscUpUdWFz'
   // rest of settings
 });
 
