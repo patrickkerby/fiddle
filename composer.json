@@ -12,6 +12,7 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "nineteensquared/instagram": "^1.1",
+        "pixney/statamic-instagram-user-feed": "^1.0",
         "statamic/cms": "3.2.33"
     },
     "require-dev": {
