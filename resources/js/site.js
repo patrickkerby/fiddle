@@ -18,6 +18,7 @@ $(document).ready(function(){
     adaptiveHeight: false
   });
 });
+$(document).ready(function(){
 
 var request = new XMLHttpRequest();
 			request.open('GET', 'https://graph.facebook.com/v13.0/me/accounts?access_token=IGQVJWNHhmUF9QXzZATOVlHRU9ZAVjVTSHM4V2Q4c0c4ek1vSVZArbVBQeTJYS3EtOUQ1UHVsQ1ZAwb0dQQkNZAeFMwenhNaTU3TUd5cFFtZAHpVWEE3cVhJbXNvdEFYNnkxbHZArMmFBRERJVW1sdjVxTzZAyNlc2Slg2Um93LWR3&count=9', true);
@@ -46,3 +47,4 @@ var request = new XMLHttpRequest();
 			  // There was a connection error of some sort
 			};
 			request.send();
+    });
