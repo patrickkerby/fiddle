@@ -9,6 +9,7 @@
 //   ]
 // }
 
+// Gallery Carousel Settings
 $(document).ready(function(){
   $('.slideshow').slick({
     centerMode: true,
@@ -19,7 +20,7 @@ $(document).ready(function(){
   });
 });
 
-  // create two separate instances of Instafeed
+// Instagram Feed
 // var bontonFeed = new Instafeed({
 //   target: 'bonton',
 //   clientId: '17841452573119419',
@@ -27,18 +28,17 @@ $(document).ready(function(){
 //   template: '<div><img title="{{caption}}" src="{{image}}" /></div>'
 // });
 
-var rbgFeed = new Instafeed({
-  target: 'riverbendgardens',
+var stream1Feed = new Instafeed({
+  target: 'stream1',
   clientId: '17841401857240059',
   accessToken: InstagramToken,
   limit: 8,
   template: '<div><img title="{{caption}}" src="{{image}}" /></div>'
 });
 
-// run both feeds
-// bontonFeed.run();
-rbgFeed.run();
+stream1Feed.run();
 
+// Smooth scroll for on-page nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();

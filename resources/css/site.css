@@ -779,16 +779,22 @@ button.slick-next::after {
 
 .grid div {
   align-self: flex-end;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  height: unset;
 }
 
 .grid img {
+  height: 100%;
   width: 100%;
-  height: auto;
+  position: absolute;
+  object-fit: cover;
 }
 
-.grid div:nth-child(1) {
+/* .grid div:nth-child(1) {
   padding-top: 16rem;
-}
+} */
 
 .grid div:nth-child(2) {
   grid-column: 2 / span 2;
@@ -801,22 +807,23 @@ button.slick-next::after {
 
 .grid div:nth-child(3) img,
 .grid div:nth-child(7) img {
-  position: relative;
+  /* position: relative; */
   top: -13rem;
 }
 
 .grid div:nth-child(4) img,
 .grid div:nth-child(8) img {
-  position: relative;
+  /* position: relative; */
   top: -4rem;
 }
 
 .grid div:nth-child(n+6) {
-  align-self: auto;
+  align-self: start;
 }
 
 .grid div:last-child img {
   width: 40%;
+  height: 40%
 }
 
 @media (max-width: 580px) {
