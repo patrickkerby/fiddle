@@ -20,19 +20,31 @@ $(document).ready(function(){
 });
 
   // create two separate instances of Instafeed
-var bontonFeed = new Instafeed({
-  target: 'bonton',
-  clientId: '3030563962',
-  accessToken: 'IGQVJWT1lxMUU3OHl3WUdVRXRqRzN5R0pXYjlrVjJEX25BVkE5OFUwQnJDWEtuWUFNUllMaGw3ZAmtjWjdKZAk9HZAzlJNXFKRENXWTZAGdGJoYUhyNjBvZA0t4N1U2ckg3bjlZAODlkVzNWVUpEN0FZAOUZArVTFBM2xoSUNpbkRN'
-  // rest of settings
-});
+// var bontonFeed = new Instafeed({
+//   target: 'bonton',
+//   clientId: '17841452573119419',
+//   accessToken: 'IGQVJYcXJVcmo1QlpXZAEVvWHh3Mlh2X19IdE95U2hPeFIzT3p2YTBzZAGRrYkVKWFVGUU5raFFwUk1MWmd0T0hsY2wzZATFTRS1QdmxKT3E4bWQyRE5QMHdUYjNjQ2VWUWthVllHM0dQeWVSUjl6WGF1ZAi1xLU5TdTU5dFpF',
+//   template: '<div><img title="{{caption}}" src="{{image}}" /></div>'
+// });
+
 var rbgFeed = new Instafeed({
   target: 'riverbendgardens',
-  clientId: '3837908',
-  accessToken: 'IGQVJVWUFEOVBnT2REeVlWQ3FBMTZAiZAjBRY3lFWFdZAWWYyRXFpeXJnQUFqN3Y0YVBRSGVhQThUck1pNnU1OHdKSmplM2JHNGpBZAmJmNV8zQ1gxYWplRTJCUHI3eU1XLXZAhd3EzRklfek5MaFJaWXZAjQ0oxX3pscUpUdWFz'
-  // rest of settings
+  clientId: '17841401857240059',
+  accessToken: InstagramToken,
+  limit: 8,
+  template: '<div><img title="{{caption}}" src="{{image}}" /></div>'
 });
 
 // run both feeds
-bontonFeed.run();
+// bontonFeed.run();
 rbgFeed.run();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

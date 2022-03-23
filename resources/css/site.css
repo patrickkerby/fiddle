@@ -474,7 +474,7 @@ a.external-url {
 @media (max-width: 580px) {
   .partners .container {
     width: calc(100% - 3rem);
-    margin: 0 auto;
+    margin: 3.5rem auto 0 auto;
   }
 
   .tabs > [type=radio] + label + * {
@@ -760,7 +760,7 @@ button.slick-next::after {
 
 /* Socials Section */
 .social {
-  margin: 8.75rem 0 7rem 0;
+  margin: 8.75rem 0 0 0;
 }
 
 .social h2,
@@ -794,14 +794,19 @@ button.slick-next::after {
   grid-column: 2 / span 2;
 }
 
+.grid div:nth-child(5) {
+  grid-column: 2;
+  align-self: flex-start;
+}
+
 .grid div:nth-child(3) img,
-.grid div:nth-child(8) img {
+.grid div:nth-child(7) img {
   position: relative;
   top: -13rem;
 }
 
 .grid div:nth-child(4) img,
-.grid div:nth-child(9) img {
+.grid div:nth-child(8) img {
   position: relative;
   top: -4rem;
 }

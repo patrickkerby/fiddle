@@ -2,24 +2,24 @@ tree:
   -
     id: 30126c95-dfea-4d99-8ad4-e39468a86187
     title: About
-    url: '#'
+    url: '#about'
   -
     id: e4342124-65ae-4f7a-a810-54512e7930ae
     title: Partners
-    url: '#'
+    url: '#partners'
   -
     id: 18a9ec20-8f6d-4968-b1cb-6b7898f50b6a
     title: Map
-    url: '#'
+    url: '#map'
   -
     id: 7782d34a-a9e4-4211-b324-de76175eb10c
     title: Area
-    url: '#'
+    url: '#area'
   -
     id: ba7fe4b4-d3dc-4a7b-8e20-9549ddf0196e
     title: Social
-    url: '#'
+    url: '#social'
   -
     id: f4ae26a3-13c3-4d74-9932-9d0c5f2ddc50
     title: Contact
-    url: '#'
+    url: '#contact'
