@@ -1,11 +1,11 @@
 ---
 id: home
 blueprint: pages
-title: 'Welcome to the gorgeous Fiddle Ridge'
+title: 'Your Gateway to the Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 44bed780-3406-4295-bfd5-fc7af693beca
-updated_at: 1647998224
+updated_at: 1648352827
 background_image: Header.jpg
 header_content: 'Fiddle Ridge is located 10 minutes west of Hinton, AB at the edge of Jasper National Park, overlooking the Rocky Mountains.'
 about_title: About
@@ -23,7 +23,7 @@ partners:
     partner_description: 'Nestled in the heart of the Canadian Rockies, our lodge at the edge of Jasper National Park, is on the doorstep of nature. Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay.'
     partner_logo: lockup-black.svg
     partner_url: '#'
-    partner_bg: Header.jpg
+    partner_bg: fmb.png
     social_media:
       instagram: fmb
       facebook: foldingmountain
@@ -34,41 +34,45 @@ partners:
     partner_name: 'Overlander Mountain Lodge'
     partner_category: Accommodation
     partner_description: 'Nestled in the heart of the Canadian Rockies, our lodge at the edge of Jasper National Park, is on the doorstep of nature. Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay.'
-    partner_logo: null
-    partner_url: null
-    partner_bg: 99-films-UeWnb8-6MMY-unsplash.jpg
-    social_media: {  }
+    partner_logo: overlander_logo-black.svg
+    partner_url: 'https://www.overlandermountainlodge.com/'
+    partner_bg: comfortable-accommodation.jpg
+    social_media:
+      instagram: overlanderlodge
+      facebook: overlandermountainlodge
+      twitter: overlanderlodge
     map_x: 70.0
     map_y: 25.0
   -
     partner_name: 'Jasper East Cabins'
     partner_category: Accommodation
     partner_description: 'This is a description for Jasper East Cabins'
-    partner_logo: null
-    partner_url: null
-    partner_bg: web-PPK_5636.jpg
+    partner_logo: jaspereast_logo-black.svg
+    partner_url: 'https://jaspereastcabins.com/'
+    partner_bg: newSlide2.jpg
     social_media:
-      instagram: '#'
-      facebook: '#'
+      instagram: jaspereastcabins
+      facebook: jasper-east-cabin
     map_x: 45.0
     map_y: 50.0
   -
     partner_name: 'Juniper Pizza Pies'
     partner_category: 'Food & Drink'
     partner_description: 'HEYYYYY OOOO it''s juniper'
-    partner_logo: null
+    partner_logo: juniper_wordmark-black.svg
     partner_url: null
     partner_bg: thebarn.jpeg
-    social_media: {  }
+    social_media:
+      instagram: juniperpizzapies
     map_x: 15.0
     map_y: 25.0
   -
     partner_name: 'Stone Peak Restaurant'
     partner_category: 'Food & Drink'
     partner_description: 'and peaks is here too, good good'
-    partner_logo: null
+    partner_logo: stonepeak_logo-black.svg
     partner_url: null
-    partner_bg: DSC_9317.jpg
+    partner_bg: home-banner-1648352650.jpg
     social_media: {  }
     map_x: 66.0
     map_y: 35.0
