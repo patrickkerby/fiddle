@@ -135,7 +135,7 @@ li {
   width: 100%;
   background: linear-gradient(rgba(64, 83, 27,.2), rgba(64, 83, 27,0));
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 4;
 }
 /* 
 .main-nav::before {
