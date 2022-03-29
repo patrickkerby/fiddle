@@ -48,3 +48,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+// Add class to nav so it can have a bg on scroll
+$(function() {
+  var header = $(".main-nav");
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 200) {
+          header.removeClass('header-static').addClass("header-scroll");
+      } else {
+          header.removeClass("header-scroll").addClass('header-static');
+      }
+  });
+});
