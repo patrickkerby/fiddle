@@ -137,19 +137,7 @@ li {
   transition: all 0.5s;
   z-index: 4;
 }
-/* 
-.main-nav::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(rgba(64, 83, 27,.2), rgba(64, 83, 27,0));
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-} */
+
 .main-nav::before {
   position: absolute;
   content: "";
@@ -331,7 +319,7 @@ h1.flexible {
 }
 
 .partners svg {
-  max-width: 200px;
+  max-width: 175px;
   margin-bottom: 2rem;
 }
 
