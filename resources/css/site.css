@@ -102,7 +102,9 @@ li {
 .section-label {
   font-size: 0.875rem;
   font-weight: 600;
+  line-height: normal;
   letter-spacing: 0.1rem;
+  margin-bottom: 0.625rem;
   text-transform: uppercase;
   color: #618B4A;
 }
@@ -843,6 +845,12 @@ button.slick-next::after {
 .grid div:last-child img {
   width: 40%;
   height: 40%
+}
+
+@media (max-width: 880px) {
+  .social h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 580px) {
