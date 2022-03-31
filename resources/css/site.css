@@ -332,8 +332,24 @@ h1.flexible {
 .partners .social_media {
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
   margin-bottom: 1.5rem;
+}
+
+.partners .social_media li {
+  padding: 0 0 0 1.5rem;
+  margin-right: 1rem;
+}
+
+.social_media li.twitter {
+  background: url("images/Twitter-white.svg") no-repeat 0 center;
+}
+
+.social_media li.facebook {
+  background: url("images/Facebook-white.svg") no-repeat 0 center;
+}
+
+.social_media li.instagram {
+  background: url("images/Instagram-white.svg") no-repeat 0 center;
 }
 
 a.external-url {
@@ -353,6 +369,8 @@ a.external-url {
   z-index: 0;
   opacity: 0.5;
 }
+
+
 
 @media (max-width: 1180px) {
   .partners nav label {
