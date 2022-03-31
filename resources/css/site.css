@@ -352,12 +352,13 @@ h1.flexible {
   background: url("images/Instagram-white.svg") no-repeat 0 center;
 }
 
-a.external-url {
+.partners a.external-url {
   font-weight: 600;
   border-bottom: solid 1px #fff;
   margin: 1.5rem auto 0 0;
   padding: 0 2.5rem 0.25rem 0;
   display: inline-flex;
+  background: url("images/icon_arrow-right.svg") no-repeat right 0;
 }
 
 .partners img.bg {
