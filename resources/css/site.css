@@ -522,6 +522,7 @@ a.external-url {
 .map .content {
   width: 80%;
   margin: 4.5rem auto 0 auto;
+  z-index: 2;
 }
 
 .map h2 {
