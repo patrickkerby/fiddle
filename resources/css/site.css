@@ -847,13 +847,25 @@ button.slick-next::after {
   height: 40%
 }
 
+@media (max-width: 1180px) {
+  .grid div:nth-child(3) img,
+  .grid div:nth-child(7) img {
+    top: -11rem;
+  }
+}
+
 @media (max-width: 880px) {
   .social h2 {
     font-size: 2rem;
   }
+
+  .grid div:nth-child(3) img,
+  .grid div:nth-child(7) img {
+    top: -9rem;
+  }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 720px) {
   .social {
     margin: 3.5rem 0;
   }
