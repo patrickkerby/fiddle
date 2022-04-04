@@ -17,6 +17,32 @@
     <script src="/js/site.js" defer></script>
 </head>
 <body>
+    
+    <div class="mobile-nav">
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav> 
+            <span class="section-label">Links</span>
+            <ul>
+                {{ nav:main_navigation }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                {{ /nav:main_navigation }}
+            </ul>
+            <span class="section-label">Partner Sites</span>
+            <ul class="partners">
+                {{ partners }}
+                    <li><a href="{{ partner_url }}">
+                        {{ partner_name }}
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M4 5H3V6V20V21H4H18H19V20V13H17V19H5V7H11V5H4Z" fill="#618B4A"/>
+                            <path d="M13 4H20M20 4V11M20 4L11 13" stroke="#618B4A" stroke-width="2"/>
+                        </svg>                        
+                    </a></li>
+                {{ /partners }}
+            </ul>
+        </nav>
+    </div>
+
     <nav class="main-nav header-static"> 
         <ul>
             {{ nav:main_navigation }}
@@ -38,11 +64,11 @@
             <ul>
             {{ partners }}
                 <li><a href="{{ partner_url }}">
-                    {{ partner_name }} 
+                    {{ partner_name }}
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path clip-rule="evenodd" d="M4 5H3V6V20V21H4H18H19V20V13H17V19H5V7H11V5H4Z" fill="#618B4A"/>
                         <path d="M13 4H20M20 4V11M20 4L11 13" stroke="#618B4A" stroke-width="2"/>
-                    </svg>                        
+                    </svg>
                 </a></li>
             {{ /partners }}
             </ul>

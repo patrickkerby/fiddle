@@ -1,5 +1,7 @@
 @import url(reset.css);
 @import url(tabs.css);
+@import url(mobile-nav.css);
+
 html {
   overflow-x: hidden;
 }
@@ -119,10 +121,6 @@ li {
 
 .row {
   flex-direction: row;
-}
-
-.mobile-display {
-  display: none;
 }
 
 @media (max-width: 580px) {

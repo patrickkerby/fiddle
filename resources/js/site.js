@@ -62,3 +62,11 @@ $(function() {
       }
   });
 });
+
+$( '.hamb' ).click(function() {
+  $( 'body' ).toggleClass( 'menu-open' );
+});
+
+$( '.mobile-nav a' ).click(function() {
+  $( 'body' ).removeClass( 'menu-open' );
+});
