@@ -22,6 +22,20 @@ body.menu-open {
   color: #AFBC88;
 }
 
+.mobile-nav nav {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .5s ease-out;
+}
+
+.menu-open .mobile-nav nav {
+  max-height: 100%;
+  padding-top: 5.5rem;
+  opacity: 1;
+}
+
 .mobile-nav nav a {
   font-family: 'swear-display', Georgia, 'Times New Roman', Times, serif;
   color: #fff;
@@ -87,19 +101,6 @@ body.menu-open {
 
 .side-menu {
   display: none;
-}
-
-.mobile-nav nav {
-  max-height: 0;
-  padding: 0;
-  opacity: 0;
-  transition: all .5s ease-out;
-}
-
-.menu-open .mobile-nav nav {
-  max-height: 100%;
-  padding-top: 5.5rem;
-  opacity: 1;
 }
 
 /* Toggle menu icon */

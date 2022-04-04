@@ -38,17 +38,6 @@ var stream1Feed = new Instafeed({
 
 stream1Feed.run();
 
-// Smooth scroll for on-page nav
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-
 // Add class to nav so it can have a bg on scroll
 $(function() {
   var header = $(".main-nav");
@@ -63,10 +52,22 @@ $(function() {
   });
 });
 
+// add/remove class on body when hamburger menu is toggled.
 $( '.hamb' ).click(function() {
   $( 'body' ).toggleClass( 'menu-open' );
 });
 
 $( '.mobile-nav a' ).click(function() {
   $( 'body' ).removeClass( 'menu-open' );
+});
+
+// Smooth scroll for on-page nav
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
