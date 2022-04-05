@@ -70,12 +70,12 @@
     </div>
     <div id="map_visual">
         {{ partners }}
-        <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%;"><img src="{{ partner_bg }}" /> {{ partner_name }}</h4>
+            <h4 class="marker" style="bottom:{{ map_y }}%; left: {{ map_x }}%;"><span class="mobile-display">{{ increment from="1" }}</span><img src="{{ partner_bg }}" /> {{ partner_name }}</h4>
         {{ /partners }}
         <div>
             <img src="{{ map_image }}" />
             {{ partners }}
-                <span class="mobile-display" style="bottom:{{ map_y }}%; left: {{ map_x }}%;">{{ increment from="1" }}</span>                
+                <span class="mobile-display" style="bottom:{{ map_y }}%; left: {{ map_x }}%;"> {{ increment from="1" }}</span>                
             {{ /partners }}
         </div>
     </div>
