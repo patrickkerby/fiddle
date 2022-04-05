@@ -613,6 +613,7 @@ h1.flexible {
   border-radius: 1rem;
   width: 2rem;
   height: 2rem;
+  object-fit: cover;
 }
 
 @media (max-width: 580px) {
