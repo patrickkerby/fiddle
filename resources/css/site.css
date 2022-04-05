@@ -123,6 +123,10 @@ li {
   flex-direction: row;
 }
 
+.mobile-display {
+  display: none;
+}
+
 @media (max-width: 580px) {
   .mobile-display {
     display: block;
@@ -582,11 +586,12 @@ h1.flexible {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem 0 2.5rem;
+  padding: 0 1rem 0 2.75rem;
   margin: 0;
   background: #fff;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 5rem;
+  line-height: 0.8;
 }
 
 #map_visual .marker::before {
@@ -598,6 +603,16 @@ h1.flexible {
   border-radius: 1rem;
   width: 1rem;
   height: 1rem;
+}
+
+#map_visual .marker img {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  background: #618B4A;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 580px) {
@@ -615,6 +630,10 @@ h1.flexible {
     height: unset;
     padding: 0;
     margin: 1rem 0 1rem 1.5rem;
+  }
+
+  #map_visual .marker img {
+    display: none;
   }
 
   #map_visual div {
