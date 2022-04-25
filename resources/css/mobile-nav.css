@@ -5,6 +5,7 @@ body.menu-open {
 
 .mobile-nav {
   position: absolute;
+  z-index: 1;
   right: 0;
   left: 0;
 }
