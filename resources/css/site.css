@@ -224,6 +224,27 @@ opacity: 1;
   font-size: 1.5rem; /* 24px */
   line-height: 2.375rem; /* 38px */
   margin: 2rem 0 0 0;
+  position: relative;
+}
+
+.intro-banner h2::after,
+.intro-banner h2::before {
+  content: '';
+  display: block;
+  left: 50%;
+  bottom: -3rem;
+  border-style: solid;
+  border-color: #fff;
+  position: absolute;
+  border-width: 2px 2px 0 0;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+.intro-banner h2::before {
+  bottom: -2.35rem;
 }
 
 @keyframes flexible {
