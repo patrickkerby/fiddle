@@ -266,6 +266,12 @@ h1.flexible {
   --tt-max: 1200;
 }
 
+@media (max-width: 850px) {
+  .intro-banner {
+    width: 75%;
+  }
+}
+
 @media (max-width: 580px) {
   .intro-banner {
     height: 100vh;
@@ -926,6 +932,18 @@ button.slick-next::after {
   height: unset;
 }
 
+.social span.username {
+  position: absolute;
+  z-index: 2;
+  bottom: 0.25rem;
+  left: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
 .grid img {
   height: 100%;
   width: 100%;
@@ -946,14 +964,19 @@ button.slick-next::after {
   align-self: flex-start;
 }
 
-.grid div:nth-child(3) img,
-.grid div:nth-child(7) img {
+.grid div:nth-child(3),
+.grid div:nth-child(7) {
   /* position: relative; */
   top: -13rem;
 }
 
-.grid div:nth-child(4) img,
-.grid div:nth-child(8) img {
+/* .grid div:nth-child(3) span.username,
+.grid div:nth-child(7) span.username {
+  bottom: 11rem;
+} */
+
+.grid div:nth-child(4),
+.grid div:nth-child(8) {
   /* position: relative; */
   top: -4rem;
 }
@@ -967,9 +990,14 @@ button.slick-next::after {
   height: 40%
 }
 
+.grid div:last-child span.username {
+  bottom: unset;
+  top: calc(40% - 2.25rem);
+}
+
 @media (max-width: 1180px) {
-  .grid div:nth-child(3) img,
-  .grid div:nth-child(7) img {
+  .grid div:nth-child(3),
+  .grid div:nth-child(7) {
     top: -11rem;
   }
 }
@@ -979,8 +1007,8 @@ button.slick-next::after {
     font-size: 2rem;
   }
 
-  .grid div:nth-child(3) img,
-  .grid div:nth-child(7) img {
+  .grid div:nth-child(3),
+  .grid div:nth-child(7) {
     top: -9rem;
   }
 }
@@ -1004,6 +1032,7 @@ button.slick-next::after {
 
   .social .grid div {
     padding: 0;
+    position: relative;
   }
 
   .social h2, .social span {

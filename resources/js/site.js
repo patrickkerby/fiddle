@@ -33,7 +33,7 @@ var stream1Feed = new Instafeed({
   clientId: '17841401857240059',
   accessToken: InstagramToken,
   limit: 8,
-  template: '<div><img title="{{caption}}" src="{{image}}" /></div>'
+  template: '<div><img title="{{caption}}" src="{{image}}" /><span class="username">{{username}}</span></div>'
 });
 
 stream1Feed.run();
