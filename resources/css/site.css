@@ -930,6 +930,7 @@ button.slick-next::after {
   padding-bottom: 100%;
   position: relative;
   height: unset;
+  overflow: hidden;
 }
 
 .social span.username {
@@ -943,6 +944,8 @@ button.slick-next::after {
   padding: 0 0 0 1.35rem;
   margin: 0;
   background: url("images/Instagram-white.svg") no-repeat left center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .grid img {
