@@ -247,7 +247,7 @@ opacity: 1;
   bottom: -2.35rem;
 }
 
-@keyframes flexible {
+@keyframes flexible-type {
   0% {
     font-size: 1rem;
   }
@@ -256,13 +256,13 @@ opacity: 1;
   }
 }
 
-h1.flexible {
+h1.flexible-type {
   font-size: 4.5rem;
   line-height: 4.5rem;
   letter-spacing: -1.5px;
   margin: 0;
 
-  --tt-key: flexible;
+  --tt-key: flexible-type;
   --tt-max: 1200;
 }
 
@@ -1006,8 +1006,7 @@ button.slick-next::after {
 }
 
 .grid div:last-child span.username {
-  bottom: unset;
-  top: 65%;
+  bottom: 0;
 }
 
 @media (max-width: 1180px) {

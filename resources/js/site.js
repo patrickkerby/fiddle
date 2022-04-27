@@ -1,13 +1,12 @@
-// Typetura settings
-// window.typetura = {
-//   selectors: [
-//       ".typetura",
-//       ".flexible-type",
-//       "article",
-//       "section",
-//       "aside"
-//   ]
-// }
+window.typetura = {
+  selectors: [
+      ".typetura",
+      ".flexible-type",
+      "article",
+      "section",
+      "aside"
+  ]
+}
 
 // Gallery Carousel Settings
 $(document).ready(function(){
