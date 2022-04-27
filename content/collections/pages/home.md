@@ -9,25 +9,25 @@ updated_at: 1650992916
 background_image: Header.jpg
 header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something for everyone to help enjoy the majestic surroundings.'
 about_title: About
-about_intro: 'A mountainous setting, endless adventures and inspiring views makes Fiddle Ridge the perfect place to create long-lasting, unforgettable memories.'
+about_intro: 'A mountainous setting, endless adventures and inspiring views makes Folding Mountain the perfect place to create long-lasting, unforgettable memories.'
 about_content: |-
   Nestled in the heart of the Canadian Rockies, our area at the edge of Jasper National Park, is on the doorstep of nature. Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay.
 
-  Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay. Nestled in the heart of the Canadian Rockies, our area at the edge of Jasper, is on the doorstep of nature.
+  This area is home to an abundance of wildlife including deer, elk, and bear as well as a variety of flora that combined with the mountain backdrop, you’ll never want to leave.
 partners_title: Partners
-partners_intro: 'Award winning food and accommodations.'
+partners_intro: 'Award-winning food, accommodations, and more…'
 partners:
   -
     partner_name: 'Folding Mountain Brewing'
     partner_category: 'Food & Drink'
-    partner_description: 'Nestled in the heart of the Canadian Rockies, our lodge at the edge of Jasper National Park, is on the doorstep of nature. Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay.'
+    partner_description: 'Enjoy unparalleled views of the Rocky Mountains from the taproom and patio at Folding Mountain Brewing. With award-winning craft beers and eats, the relaxed atmosphere provides a unique experience for all ages.'
     partner_logo: lockup-black.svg
-    partner_url: '#'
+    partner_url: 'https://foldingmountain.com/'
     partner_bg: fmb.png
     social_media:
-      instagram: fmb
+      instagram: foldingmountainbrewing
       facebook: foldingmountain
-      twitter: fmbrewing
+      twitter: foldingmountain
     map_x: 25.0
     map_y: 15.0
   -
@@ -46,7 +46,7 @@ partners:
   -
     partner_name: 'Jasper East Cabins'
     partner_category: Accommodation
-    partner_description: 'This is a description for Jasper East Cabins'
+    partner_description: 'Nestled at the edge of Jasper National Park, overlooking the majestic Rocky Mountains, sits Jasper East Cabins. This jewel in the Canadian Rockies offers modern-but-cozy individual cabins, complete with everything you need for a comfortable, self-catered vacation.'
     partner_logo: jaspereast_logo-black.svg
     partner_url: 'https://jaspereastcabins.com/'
     partner_bg: newSlide2.jpg
@@ -58,7 +58,7 @@ partners:
   -
     partner_name: 'Juniper Pizza Pies'
     partner_category: 'Food & Drink'
-    partner_description: 'HEYYYYY OOOO it''s juniper'
+    partner_description: null
     partner_logo: juniper_wordmark-black.svg
     partner_url: null
     partner_bg: thebarn.jpeg
@@ -69,29 +69,33 @@ partners:
   -
     partner_name: 'Stone Peak Restaurant'
     partner_category: 'Food & Drink'
-    partner_description: 'and peaks is here too, good good'
+    partner_description: 'Dining at the Stone Peak Restaurant and Lounge located inside the Overlander Lodge is an experience like no other. Combining the freshest seasonal ingredients, an extensive wine list and an awe-inspiring view to envy all restaurants in Jasper, Alberta, we’re here to help elevate any occasion; whether an intimate romantic dinner or a celebration with great company and exceptional food.'
     partner_logo: stonepeak_logo-black.svg
-    partner_url: null
+    partner_url: 'https://www.stonepeakrestaurant.com/'
     partner_bg: home-banner-1648352650.jpg
     social_media: {  }
     map_x: 66.0
     map_y: 35.0
   -
-    partner_name: 'Happy Habit Hotel'
+    partner_name: 'Northaven Retreat & Wellness'
     partner_category: Accommodation
-    partner_description: 'Happy Habit? Happy Hobbit? Happy Hobbit.'
+    partner_description: |-
+      Located at the edge of Jasper National Park, the Northaven Wellness Retreat also sits on the leading edge of bio-innovation and healthy hospitality.
+
+      Open to groups of all kinds, from health and yoga, to activist knitters, to corporate retreats, Northhaven caters to those seeking something utterly unique in their time away from the world.
     partner_logo: null
-    partner_url: null
+    partner_url: journeynorthhaven.com
     partner_bg: pbc-apple.jpg
-    social_media: {  }
+    social_media:
+      instagram: Journeynorthaven
     map_x: 70.0
     map_y: 70.0
 map_title: Map
 map_intro: 'Get the lay of the land'
-directions_url: '#'
+directions_url: 'https://goo.gl/maps/PGpAWAH4KePrF3jP9'
 map_image: Map_-Placeholder.png
 area_title: Area
-area_intro: 'Plan the perfect weekend getaway. 3 hours from Edmonton, at the edge of Jasper National Park.'
+area_intro: 'Perfectly positioned at the edge of Jasper National Park, It’s time to plan your perfect mountain getaway!'
 area_content:
   -
     type: paragraph
@@ -105,7 +109,7 @@ area_content:
           -
             type: link
             attrs:
-              href: '#'
+              href: 'https://www.overlandermountainlodge.com/'
               rel: null
               target: _blank
               title: null
@@ -119,62 +123,76 @@ area_content:
           -
             type: link
             attrs:
-              href: '#'
+              href: 'https://jaspereastcabins.com/'
               rel: null
               target: _blank
               title: null
         text: 'Jasper East Cabins'
       -
         type: text
-        text: '. Grab brunch and enjoy the view from the deck of the '
+        text: '. Wind down the day with a pint from '
       -
         type: text
         marks:
           -
             type: link
             attrs:
-              href: '#'
+              href: 'https://foldingmountain.com/'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Folding Mountain Brewing'
+      -
+        type: text
+        text: ' while enjoying casual eats or perhaps a slice of pizza from the seasonal '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.instagram.com/juniperpizzapies/?hl=en'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Juniper Pizza Pies'
+      -
+        type: text
+        text: ' food truck. And look no further than '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.stonepeakrestaurant.com/'
               rel: null
               target: _blank
               title: null
         text: 'Stone Peak Restaurant'
       -
         type: text
-        text: '. Wind down the day with a slice from '
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: '#'
-              rel: null
-              target: _blank
-              title: null
-        text: 'Jasper Pizza Pies'
-      -
-        type: text
-        text: ', and a pint from '
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: '#'
-              rel: null
-              target: _blank
-              title: null
-        text: 'Folding Mountain Brewing’s'
-      -
-        type: text
-        text: ' award-winning selection.'
+        text: " and Lounge for crafted cocktails and farm-to-table dinners from inside or on the expansive patio.\_"
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Outside of the area, you can find activities for all walks of life, from hiking, skiing and rock-climbing, to birdwatching, and something.'
+        text: 'As the area continues to grow, look for new spaces to open such as the addition of '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://journeynorthhaven.com'
+              rel: null
+              target: _blank
+              title: null
+        text: 'North Haven Retreat & Wellness'
+      -
+        type: text
+        text: ' featuring EMF-free rooms, yoga space, woodfire-heated yurt & a rustic nature spa!'
 area_images:
   - Rectangle-10.jpg
   - Image_-Right-(1).png
