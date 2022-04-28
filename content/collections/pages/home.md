@@ -5,9 +5,9 @@ title: 'Your Gateway to the Jasper Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1650992916
+updated_at: 1651171682
 background_image: Header.jpg
-header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something for everyone to help enjoy the majestic surroundings.'
+header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something to help everyone enjoy the majestic surroundings.'
 about_title: About
 about_intro: 'A mountainous setting, endless adventures and inspiring views makes Folding Mountain the perfect place to create long-lasting, unforgettable memories.'
 about_content: |-
