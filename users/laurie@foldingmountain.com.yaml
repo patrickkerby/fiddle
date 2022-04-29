@@ -2,3 +2,15 @@ name: Laurie
 super: true
 id: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
 password_hash: $2y$10$lPnGiIeT.hblbZFOgltdk.1YqUddBiZFJG3qb/eszjDhCSLG1j4Yq
+preferences:
+  start_page: collections/pages/entries/home
+  favorites:
+    -
+      name: 'Home Page'
+      url: collections/pages/entries/home
+  assets:
+    assets:
+      mode: grid
+  collections:
+    general_pages:
+      after_save: continue_editing
