@@ -10,6 +10,20 @@ body.menu-open {
   left: 0;
 }
 
+.logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  max-width: 124px;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.menu-open .logo {
+  opacity: 0;
+  
+}
+
 .menu-open .mobile-nav {
   background-color: #40531B;
 }
@@ -121,7 +135,7 @@ body.menu-open {
 
 
 
-@media (min-width: 580px) {
+@media (min-width: 701px) {
   .hamb,
   .mobile-nav nav  {
       display: none;
