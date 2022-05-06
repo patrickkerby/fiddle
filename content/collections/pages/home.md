@@ -5,7 +5,7 @@ title: 'Your Gateway to the Jasper Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1651171682
+updated_at: 1651819966
 background_image: Header.jpg
 header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something to help everyone enjoy the majestic surroundings.'
 about_title: About
@@ -28,8 +28,8 @@ partners:
       instagram: foldingmountainbrewing
       facebook: foldingmountain
       twitter: foldingmountain
-    map_x: 25.0
-    map_y: 15.0
+    map_x: 70.0
+    map_y: 55.0
   -
     partner_name: 'Overlander Mountain Lodge'
     partner_category: Accommodation
@@ -41,8 +41,8 @@ partners:
       instagram: overlanderlodge
       facebook: overlandermountainlodge
       twitter: overlanderlodge
-    map_x: 70.0
-    map_y: 25.0
+    map_x: 30.0
+    map_y: 70.0
   -
     partner_name: 'Jasper East Cabins'
     partner_category: Accommodation
@@ -53,19 +53,19 @@ partners:
     social_media:
       instagram: jaspereastcabins
       facebook: jasper-east-cabin
-    map_x: 45.0
-    map_y: 50.0
+    map_x: 55.0
+    map_y: 37.0
   -
     partner_name: 'Juniper Pizza Pies'
     partner_category: 'Food & Drink'
     partner_description: null
     partner_logo: juniper_wordmark-black.svg
-    partner_url: null
-    partner_bg: thebarn.jpeg
+    partner_url: 'https://www.instagram.com/juniperpizzapies/'
+    partner_bg: juniper.jpg
     social_media:
       instagram: juniperpizzapies
-    map_x: 15.0
-    map_y: 25.0
+    map_x: 78.0
+    map_y: 30.0
   -
     partner_name: 'Stone Peak Restaurant'
     partner_category: 'Food & Drink'
@@ -74,8 +74,8 @@ partners:
     partner_url: 'https://www.stonepeakrestaurant.com/'
     partner_bg: home-banner-1648352650.jpg
     social_media: {  }
-    map_x: 66.0
-    map_y: 35.0
+    map_x: 33.0
+    map_y: 57.0
   -
     partner_name: 'Northaven Retreat & Wellness'
     partner_category: Accommodation
@@ -84,16 +84,16 @@ partners:
 
       Open to groups of all kinds, from health and yoga, to activist knitters, to corporate retreats, Northhaven caters to those seeking something utterly unique in their time away from the world.
     partner_logo: null
-    partner_url: journeynorthhaven.com
+    partner_url: 'https://www.instagram.com/journeynorthaven'
     partner_bg: pbc-apple.jpg
     social_media:
       instagram: Journeynorthaven
-    map_x: 70.0
-    map_y: 70.0
+    map_x: 50.0
+    map_y: 20.0
 map_title: Map
 map_intro: 'Get the lay of the land'
 directions_url: 'https://goo.gl/maps/PGpAWAH4KePrF3jP9'
-map_image: Map_-Placeholder.png
+map_image: fmb_folding-mountain-landing-map@2x.png
 area_title: Area
 area_intro: 'Perfectly positioned at the edge of Jasper National Park, It’s time to plan your perfect mountain getaway!'
 area_content:
