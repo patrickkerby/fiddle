@@ -137,7 +137,8 @@ body.menu-open {
 
 @media (min-width: 701px) {
   .hamb,
-  .mobile-nav nav  {
+  .mobile-nav nav,
+  .logo  {
       display: none;
   }
 }
