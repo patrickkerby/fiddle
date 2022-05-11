@@ -5,7 +5,7 @@ title: 'Your Gateway to the Jasper Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1651819966
+updated_at: 1652221578
 background_image: Header.jpg
 header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something to help everyone enjoy the majestic surroundings.'
 about_title: About
@@ -13,7 +13,7 @@ about_intro: 'A mountainous setting, endless adventures and inspiring views make
 about_content: |-
   Nestled in the heart of the Canadian Rockies, our area at the edge of Jasper National Park, is on the doorstep of nature. Overlooking the majestic Rocky Mountains, we combine warm, attentive service with unique and natural beauty for an unforgettable stay.
 
-  This area is home to an abundance of wildlife including deer, elk, and bear as well as a variety of flora that combined with the mountain backdrop, you’ll never want to leave.
+  The area is home to an abundance of wildlife including deer, elk and bears. Combine this with the breathtaking mountain backdrop and you’ll never want to leave.
 partners_title: Partners
 partners_intro: 'Award-winning food, accommodations, and more…'
 partners:
@@ -28,7 +28,7 @@ partners:
       instagram: foldingmountainbrewing
       facebook: foldingmountain
       twitter: foldingmountain
-    map_x: 70.0
+    map_x: 10.0
     map_y: 55.0
   -
     partner_name: 'Overlander Mountain Lodge'
@@ -41,8 +41,8 @@ partners:
       instagram: overlanderlodge
       facebook: overlandermountainlodge
       twitter: overlanderlodge
-    map_x: 30.0
-    map_y: 70.0
+    map_x: 55.0
+    map_y: 68.0
   -
     partner_name: 'Jasper East Cabins'
     partner_category: Accommodation
@@ -53,19 +53,19 @@ partners:
     social_media:
       instagram: jaspereastcabins
       facebook: jasper-east-cabin
-    map_x: 55.0
-    map_y: 37.0
+    map_x: 40.0
+    map_y: 32.0
   -
     partner_name: 'Juniper Pizza Pies'
     partner_category: 'Food & Drink'
-    partner_description: null
+    partner_description: 'Juni is located next to the Folding Mountain Brewing Beer/Garden seasonally May - September. Juni serves up thin crust pizza to order with a their take on locally inspired ingredients.'
     partner_logo: juniper_wordmark-black.svg
     partner_url: 'https://www.instagram.com/juniperpizzapies/'
     partner_bg: juniper.jpg
     social_media:
       instagram: juniperpizzapies
-    map_x: 78.0
-    map_y: 30.0
+    map_x: 10.0
+    map_y: 28.0
   -
     partner_name: 'Stone Peak Restaurant'
     partner_category: 'Food & Drink'
@@ -74,8 +74,8 @@ partners:
     partner_url: 'https://www.stonepeakrestaurant.com/'
     partner_bg: home-banner-1648352650.jpg
     social_media: {  }
-    map_x: 33.0
-    map_y: 57.0
+    map_x: 50.0
+    map_y: 48.0
   -
     partner_name: 'Northaven Retreat & Wellness'
     partner_category: Accommodation
@@ -85,10 +85,10 @@ partners:
       Open to groups of all kinds, from health and yoga, to activist knitters, to corporate retreats, Northhaven caters to those seeking something utterly unique in their time away from the world.
     partner_logo: null
     partner_url: 'https://www.instagram.com/journeynorthaven'
-    partner_bg: pbc-apple.jpg
+    partner_bg: null
     social_media:
       instagram: Journeynorthaven
-    map_x: 50.0
+    map_x: 40.0
     map_y: 20.0
 map_title: Map
 map_intro: 'Get the lay of the land'
