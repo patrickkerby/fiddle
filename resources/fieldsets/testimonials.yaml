@@ -1,0 +1,21 @@
+title: Testimonials
+fields:
+  -
+    handle: testimonial_intro
+    field:
+      antlers: false
+      display: 'Testimonial Introduction'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: testimonial_source
+    field:
+      input_type: text
+      antlers: false
+      display: 'Testimonial Source'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above

@@ -4,7 +4,8 @@ blueprint: general_pages
 title: 'Privacy Note'
 header_background_image: Header-1646161836.jpg
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1651197662
+updated_at: 1652376331
+display_back_to_home: true
 content:
   -
     type: heading

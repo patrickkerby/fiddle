@@ -291,7 +291,14 @@ opacity: 1;
   background-position: center center;
   color: #fff;
   text-align: center;
+  width: 100%;
 }
+
+/* .intro-banner:hover {
+  width: 120%;
+  transform: scale(120%);
+  transition: all 2s ease-in-out;
+} */
 
 .intro-banner.default {
   height: 400px;
@@ -361,6 +368,8 @@ opacity: 1;
 .about .section-label {
   color: #AFBC88;
   margin-right: 10%;
+  margin-top: 0.5rem;
+  width: 4rem;
 }
 
 .about .content p {
@@ -967,6 +976,33 @@ button.slick-next::after {
   }
 }
 
+/* Testimonials */
+.testimonial {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonial div.row {
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.testimonial .section-label {
+  width: 4rem;
+  margin: 5rem 10% 0 0;
+}
+
+.testimonial .content {
+  flex-direction: column;
+  margin: 0;
+}
+
+.testimonial h2 {
+  width: 100%;
+  margin-top: 4.5rem;
+}
+
 /* Socials Section */
 .social {
   margin: 8.75rem 0 0 0;
@@ -981,7 +1017,6 @@ button.slick-next::after {
 .social .grid {
   display: grid;
   grid-template-columns: 16% 14% 19% 23% 23%;
-  grid-template-rows: 1fr 1fr;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 }
@@ -1127,7 +1162,7 @@ button.slick-next::after {
 
 footer {
   width: 80%;
-  margin: 0 auto;
+  margin: 6.5rem auto 0 auto;
 }
 
 footer .row {

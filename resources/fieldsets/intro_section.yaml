@@ -1,0 +1,30 @@
+title: 'Intro Section'
+fields:
+  -
+    handle: intro_section_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Intro Section Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: intro_section_lead
+    field:
+      antlers: false
+      display: 'Intro Section Lead'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: intro_section_content
+    field:
+      antlers: false
+      display: 'Intro Section Content'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above

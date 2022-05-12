@@ -3,7 +3,40 @@
       <h1 class="flexible">{{ title }}</h1>
   </div>
 </section>
-<section class="default-content">
-  <a class="back-home" href="../">Back to home</a>
-  {{ content }}
-</section>
+{{ if display_back_to_home }}
+  <section class="default-content">
+    <a class="back-home" href="../">Back to home</a>
+    {{ content }}
+  </section>
+{{ /if }}
+{{ if generalintro_section_title }}
+  <section class="about default" id="about">
+    <div class="row">
+        <span class="section-label">{{ generalintro_section_title }}</span>
+        <div class="content">
+          <h2>{{ generalintro_section_lead }}</h2>
+          <p class="text-medium">{{ generalintro_section_content }}</p>
+        </div>
+    </div>
+  </section>
+{{ /if }}
+{{ if careers_slideshow_title }}
+  <section class="area testimonial" id="area">
+    <div class="row">
+      <span class="section-label">{{ testimonials_title }}</span>
+      <div class="content">
+        {{ testimonials_set }}
+          <h2>{{ general_testimonial_intro }}</h2>
+          <p class="text-small">{{ general_testimonial_source }}</p>
+        {{ /testimonials_set }}
+      </div>
+    </div>
+      <div class="gallery slideshow">
+          {{ careers_slideshow_images }}
+              <div class="slide-item">
+                <img src="{{ url }}" />
+              </div>
+          {{ /careers_slideshow_images }}
+      </div>
+  </section>
+{{ /if }}

@@ -1,0 +1,14 @@
+title: 'Slideshow'
+fields:
+      -
+        handle: slideshow_images
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Slideshow Images'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above

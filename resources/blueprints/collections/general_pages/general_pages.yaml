@@ -66,4 +66,54 @@ sections:
         field:
           type: slug
           localizable: true
+      -
+        handle: display_back_to_home
+        field:
+          default: false
+          display: 'Display "back to home?"'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+  intro_section:
+    display: 'Intro Section'
+    fields:
+      -
+        import: intro_section
+        prefix: general
+  testimonials:
+    display: Testimonials
+    fields:
+      -
+        handle: testimonials_title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: testimonials_set
+        field:
+          collapse: false
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: testimonials
+                  prefix: general_
+          display: 'Replicator Field'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+  slideshow:
+    display: Slideshow
+    fields:
+      -
+        import: slideshow
+        prefix: careers_
 title: 'General Pages'
