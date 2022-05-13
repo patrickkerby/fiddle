@@ -1,0 +1,14 @@
+title: 'Job Postings'
+template: job_postings/show
+layout: layout
+mount: f4b54296-2eed-4d2d-9686-bc5bb4c8d7cd
+revisions: false
+route: '/careers/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: false
+  slugs: true

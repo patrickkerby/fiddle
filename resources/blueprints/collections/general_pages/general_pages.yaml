@@ -75,6 +75,15 @@ sections:
           icon: toggle
           listable: hidden
           instructions_position: above
+      -
+        handle: display_job_postings
+        field:
+          default: false
+          display: 'Display Job Postings?'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
   intro_section:
     display: 'Intro Section'
     fields:

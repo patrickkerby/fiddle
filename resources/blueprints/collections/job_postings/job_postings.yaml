@@ -1,0 +1,101 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: partner_selection
+        field:
+          mode: select
+          create: false
+          taxonomies:
+            - partners
+          display: 'Partner Selection'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          max_items: 1
+      -
+        handle: job_type
+        field:
+          input_type: text
+          antlers: false
+          display: 'Job type'
+          type: text
+          icon: text
+          instructions: 'ex. "Full-time"'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: job_description
+        field:
+          always_show_set_button: false
+          buttons:
+            - h3
+            - h4
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+            - horizontalrule
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Job Description'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - job_postings
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: partners
+        field:
+          type: terms
+          taxonomies:
+            - partners
+          display: Partners
+          mode: select
+title: 'Job Postings'

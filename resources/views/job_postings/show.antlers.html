@@ -1,0 +1,15 @@
+<section class="intro-banner default" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ header_background_image }}');">
+  <div class="content">
+      <h1 class="flexible">{{ title }}</h1>
+  </div>
+</section>
+<section class="default-content">
+  <a class="back-home" href="{{ parent:url }}">Back to {{ parent:title }}</a>
+  <h2>{{ title }}</h2>
+  <div class="meta">
+    {{ partner_selection }} {{ title }} {{ /partner_selection }} {{ job_type }}
+  </div>
+  <div class="content">
+    {{ job_description }}
+  </div>
+</section>

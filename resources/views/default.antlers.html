@@ -5,7 +5,7 @@
 </section>
 {{ if display_back_to_home }}
   <section class="default-content">
-    <a class="back-home" href="../">Back to home</a>
+    <a class="back-home" href="{{ parent }}">Back to {{ parent:title }}</a>
     {{ content }}
   </section>
 {{ /if }}
@@ -20,6 +20,26 @@
     </div>
   </section>
 {{ /if }}
+
+{{ if display_job_postings }}
+  <section class="job_postings row">
+    <ul>
+      {{ collection from="job_postings" }}
+        <li>
+          <a href="{{ url }}">
+            <h3>{{ title }}</h3>
+            <span>View Job</span>
+            <div class="meta">
+              {{ partner_selection }} {{ title }} {{ /partner_selection }} {{ job_type }}
+            </div>
+          </a>
+        
+        </li>
+      {{ /collection  }}
+    </ul>
+  </section>
+{{ /if }}
+
 {{ if careers_slideshow_title }}
   <section class="area testimonial" id="area">
     <div class="row">
