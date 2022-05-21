@@ -247,6 +247,7 @@ opacity: 1;
 
 .main-nav ul li:nth-child(1) img {
   max-width: none;
+  margin-top: 0.5rem;
 }
 
 .main-nav ul li a {
@@ -259,6 +260,10 @@ opacity: 1;
 
 .main-nav ul li a:hover {
   opacity: 0.6;
+}
+
+.main-nav ul li:nth-child(1) a {
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -274,6 +279,10 @@ opacity: 1;
 
   .main-nav ul li a {
     padding: 1rem 1.25rem;
+  }
+
+  .main-nav ul li:nth-child(1) a {
+    padding: 0;
   }
 }
 
