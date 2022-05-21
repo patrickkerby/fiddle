@@ -23,20 +23,33 @@
 
 {{ if display_job_postings }}
   <section class="job_postings row">
-    <ul>
-      {{ collection from="job_postings" }}
-        <li>
-          <a href="{{ url }}">
-            <h3>{{ title }}</h3>
-            <span>View Job</span>
-            <div class="meta">
-              {{ partner_selection }} {{ title }} {{ /partner_selection }} {{ job_type }}
-            </div>
-          </a>
-        
-        </li>
-      {{ /collection  }}
-    </ul>
+    <div class="wrapper">
+    <div class="content">      
+      <span class="section-label">{{ job_postings_section_title }}</span>
+      {{ job_postings_title_and_content }}
+      <ul class="listings">
+        {{ collection from="job_postings" }}
+          <li>
+            <a href="{{ url }}">
+              {{ get_content from="/" }}
+                {{ partners }}
+                  {{ if partner_name == partner_selection:title }}
+                    <img src="{{ partner_bg }}" />          
+                  {{ /if }}      
+                {{ /partners }}
+              {{ /get_content }}
+
+                <h3>{{ title }}</h3>
+                <span class="view">View Job</span>
+                <div class="meta text-small">
+                  {{ partner_selection }} {{ title }} {{ /partner_selection }} <span class="job_type">{{ job_type }}</span>
+                </div>
+            </a>
+          </li>
+        {{ /collection  }}
+      </ul>
+    </div>
+  </div>
   </section>
 {{ /if }}
 

@@ -5,7 +5,7 @@ title: 'Your Gateway to the Jasper Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1652221578
+updated_at: 1653080691
 background_image: Header.jpg
 header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something to help everyone enjoy the majestic surroundings.'
 about_title: About
@@ -85,7 +85,7 @@ partners:
       Open to groups of all kinds, from health and yoga, to activist knitters, to corporate retreats, Northhaven caters to those seeking something utterly unique in their time away from the world.
     partner_logo: null
     partner_url: 'https://www.instagram.com/journeynorthaven'
-    partner_bg: null
+    partner_bg: Header.jpg
     social_media:
       instagram: Journeynorthaven
     map_x: 40.0
