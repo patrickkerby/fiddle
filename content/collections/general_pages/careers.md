@@ -2,9 +2,9 @@
 id: f4b54296-2eed-4d2d-9686-bc5bb4c8d7cd
 blueprint: general_pages
 title: Careers
-header_background_image: Header-1646161836.jpg
+header_background_image: general/Header-1646161836.jpg
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1653000513
+updated_at: 1653104991
 generalintro_section_title: Careers
 generalintro_section_lead: 'A mountainous setting, endless adventures and inspiring views makes Fiddle Ridge the perfect place to create long-lasting, unforgettable memories.'
 generalintro_section_content: |-
@@ -15,11 +15,9 @@ display_back_to_home: false
 careers_slideshow_title: Testimonials
 careers_slideshow_intro: 'Great team, great location, and great adventure for a seasonal job. I did enjoy my time there. And also great staff accommodation with good rent, you will need a vehicle to be able to enjoy this area.'
 careers_slideshow_images:
-  - 152302353_253375619663068_2599261010115626706_n.jpg
-  - fmb.png
-  - home-banner.jpg
-  - Image_-Right-(1).png
-  - sample-image-1652209667.jpg
+  - jec/JEC-Hero.png
+  - northhaven/NH-HERO.png
+  - stonepeak/STONE-PEAK-HERO.png
 testimonials_title: Testimonials
 testimonials_set:
   -
