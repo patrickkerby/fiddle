@@ -1082,17 +1082,17 @@ button.slick-next::after {
   padding-top: 16rem;
 } */
 
-.grid div:nth-child(2) {
+.grid div:nth-of-type(2) {
   grid-column: 2 / span 2;
 }
 
-.grid div:nth-child(5) {
+.grid div:nth-of-type(5) {
   grid-column: 2;
   align-self: flex-start;
 }
 
-.grid div:nth-child(3),
-.grid div:nth-child(7) {
+.grid div:nth-of-type(3),
+.grid div:nth-of-type(7) {
   /* position: relative; */
   top: -13rem;
 }
@@ -1102,28 +1102,28 @@ button.slick-next::after {
   bottom: 11rem;
 } */
 
-.grid div:nth-child(4),
-.grid div:nth-child(8) {
+.grid div:nth-of-type(4),
+.grid div:nth-of-type(8) {
   /* position: relative; */
   top: -4rem;
 }
 
-.grid div:nth-child(n+6) {
-  align-self: start;
+.grid div:nth-of-type(n+6) {
+  align-self: start;  
 }
 
-.grid div:last-child {
+.grid div:last-of-type {
   width: 50%;
-  padding-bottom: 50%
+  padding-bottom: 50%;
 }
 
-.grid div:last-child span.username {
+.grid div:last-of-type span.username {
   bottom: 0;
 }
 
 @media (max-width: 1180px) {
-  .grid div:nth-child(3),
-  .grid div:nth-child(7) {
+  .grid div:nth-of-type(3),
+  .grid div:nth-of-type(7) {
     top: -11rem;
   }
 }
