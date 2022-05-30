@@ -603,9 +603,10 @@ opacity: 1;
   }
 
   .partners .social_media li {
-    padding-left: 1rem;
+    padding-left: 0;
     text-indent: -9999999999px;
-    margin-right: 1.25rem;
+    margin-right: 0;
+    min-width: 2rem;
   }
 
   .social_media li.twitter {
