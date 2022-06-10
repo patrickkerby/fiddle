@@ -31,11 +31,20 @@ var stream1Feed = new Instafeed({
   target: 'stream1',
   clientId: '17841401857240059',
   accessToken: InstagramToken,
-  limit: 8,
-  template: '<div><img title="{{caption}}" src="{{image}}" /><span class="username">{{username}}</span></div>'
+  limit: 4,
+  template: '<div><img title="{{caption}}" src="{{image}}" /><span class="username"><a href="{{link}}">{{username}}</a></span></div>'
+});
+
+var stream2Feed = new Instafeed({
+  target: 'stream2',
+  clientId: '17841400011612286',
+  accessToken: 'IGQVJXbjIzeVFIb2lZAeWJ4X0NhRVBnUHlleTA4bEV2RWhNc3k5VUFHUXNMX05iV3RRQmp4NVhrRUF6eDlPOVkwQ1Q1djY1dUw0bms4ZAHV2SXkwbW9qWEpGWmc0a1p5QWpBaE1JTl9B',
+  limit: 4,
+  template: '<div><img title="{{caption}}" src="{{image}}" /><span class="username"><a href="{{link}}">{{username}}</span></a></div>'
 });
 
 stream1Feed.run();
+stream2Feed.run();
 
 // Add class to nav so it can have a bg on scroll
 $(function() {

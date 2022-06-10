@@ -1030,7 +1030,7 @@ button.slick-next::after {
 }
 
 .social h2,
-.social span {
+.social span.section-label {
   width: 70%;
   margin-left: 17%;
 }
@@ -1040,6 +1040,11 @@ button.slick-next::after {
   grid-template-columns: 16% 14% 19% 23% 23%;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#stream2 {
+  margin-bottom: 0;
 }
 
 .grid div {
@@ -1088,17 +1093,17 @@ button.slick-next::after {
   padding-top: 16rem;
 } */
 
-.grid div:nth-child(2) {
+#stream1 div:nth-of-type(2) {
   grid-column: 2 / span 2;
 }
 
-.grid div:nth-child(5) {
+#stream2 div:nth-of-type(1) {
   grid-column: 2;
   align-self: flex-start;
 }
 
-.grid div:nth-child(3),
-.grid div:nth-child(7) {
+#stream1 div:nth-of-type(3),
+#stream2 div:nth-of-type(3) {
   /* position: relative; */
   top: -13rem;
 }
@@ -1108,28 +1113,49 @@ button.slick-next::after {
   bottom: 11rem;
 } */
 
-.grid div:nth-child(4),
-.grid div:nth-child(8) {
+#stream1 div:nth-of-type(4),
+#stream2 div:nth-of-type(4) {
   /* position: relative; */
   top: -4rem;
 }
 
-.grid div:nth-child(n+6) {
-  align-self: start;
+#stream2 div {
+  align-self: start;  
 }
 
-.grid div:last-child {
+#stream2 div:last-of-type {
   width: 50%;
-  padding-bottom: 50%
+  padding-bottom: 50%;
 }
 
-.grid div:last-child span.username {
+#stream2 div:last-of-type span.username {
   bottom: 0;
 }
 
+.social span.username {
+  position: absolute;
+  z-index: 2;
+  bottom: 0.25rem;
+  left: 0.75rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 0 0 1.35rem;
+  margin: 0;
+  background: url("images/Instagram-white.svg") no-repeat left center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+
+.social span.username a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 @media (max-width: 1180px) {
-  .grid div:nth-child(3),
-  .grid div:nth-child(7) {
+  .grid #stream1 div:nth-of-type(3),
+  .grid #stream2 div:nth-of-type(3) {
     top: -11rem;
   }
 }
@@ -1139,8 +1165,8 @@ button.slick-next::after {
     font-size: 2rem;
   }
 
-  .grid div:nth-child(3),
-  .grid div:nth-child(7) {
+  .grid #stream1 div:nth-child(3),
+  .grid #stream2 div:nth-child(3) {
     top: -9rem;
   }
 }
@@ -1163,7 +1189,13 @@ button.slick-next::after {
     row-gap: 1rem;
   }
 
-  .social .grid div {
+  .social #stream2 {
+    margin-top: 1rem;
+  }
+
+  .social .grid div,
+  .social #stream1 div,
+  .social #stream2 div {
     position: relative;
     top: 0;
     bottom: 0;
@@ -1173,7 +1205,7 @@ button.slick-next::after {
     padding-bottom: 100%;
   }
 
-  .social h2, .social span {
+  .social h2, .social span.section-label {
     margin-left: 1.5rem;
     width: 100%;
   }

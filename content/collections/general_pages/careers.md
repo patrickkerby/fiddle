@@ -4,7 +4,8 @@ blueprint: general_pages
 title: Careers
 header_background_image: header.jpg
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1653546529
+updated_at: 1653168103
+
 generalintro_section_title: Careers
 generalintro_section_lead: 'A mountainous setting, endless adventures and inspiring views makes Fiddle Ridge the perfect place to create long-lasting, unforgettable memories.'
 generalintro_section_content: |-
@@ -25,7 +26,7 @@ testimonials_set:
     type: new_set
     enabled: true
     general_testimonial_source: 'Gina, Overlander Mountain Lodge'
-display_job_postings: true
+display_job_postings: false
 job_postings_section_title: 'Open Positions'
 job_postings_title_and_content:
   -
@@ -42,4 +43,4 @@ job_postings_title_and_content:
       -
         type: text
         text: 'If you feel you would be a good fit for us, and us for you, we invite you to send your resume:'
----
+
