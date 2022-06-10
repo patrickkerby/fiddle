@@ -537,7 +537,7 @@ opacity: 1;
   }
   
   .partners .container h2 {
-    margin: 0 1.5rem 1.5rem 0;
+    margin: 0 1.5rem 1rem 0;
     width: 100%;
     line-height: 1;
   }
@@ -583,6 +583,7 @@ opacity: 1;
     color: #262727;
     position: static;
     margin: 0;
+    z-index: 1090;
   }
 
   .partners nav li:hover {
@@ -603,21 +604,26 @@ opacity: 1;
   }
 
   .partners .social_media li {
-    padding-left: 1rem;
+    padding-left: 0;
     text-indent: -9999999999px;
-    margin-right: 1.25rem;
+    margin-right: 0;
+    min-width: 2rem;
+  }
+
+  .partners .social_media li a {
+    padding: 0.25rem;
   }
 
   .social_media li.twitter {
-    background: url("images/Twitter.svg") no-repeat 0 0;
+    background: url("images/Twitter.svg") no-repeat center center;
   }
 
   .social_media li.facebook {
-    background: url("images/Facebook.svg") no-repeat 0 0;
+    background: url("images/Facebook.svg") no-repeat center center;
   }
 
   .social_media li.instagram {
-    background: url("images/Instagram.svg") no-repeat 0 0;
+    background: url("images/Instagram.svg") no-repeat center center;
   }
 
   .partners a.external-url {
