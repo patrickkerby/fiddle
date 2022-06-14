@@ -695,6 +695,7 @@ opacity: 1;
 
 .map .links {
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 .map .external-url {
@@ -716,12 +717,12 @@ opacity: 1;
   height: 1.5rem;
 }
 
-.map a.external-url svg path {
+.map a.external-url.map svg path {
   stroke: #618B4A;
   transition: stroke 0.5s ease;
 }
 
-.map a.external-url:hover svg path {
+.map a.external-url.map:hover svg path {
   stroke: #40531B;
 }
 
