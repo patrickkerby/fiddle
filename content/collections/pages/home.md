@@ -5,7 +5,7 @@ title: 'Your Gateway to the Jasper Rocky Mountains'
 template: home
 author: 44bed780-3406-4295-bfd5-fc7af693beca
 updated_by: 83fa1a58-b71b-49d5-a89e-05f3926fcedb
-updated_at: 1653547890
+updated_at: 1655236647
 background_image: header.jpg
 header_content: 'At the entrance of the Jasper National Park and the Canadian Rocky Mountains lies Folding Mountain. With a variety of hospitality, dining, and recreational attractions, there is something to help everyone enjoy the majestic surroundings.'
 about_title: About
@@ -202,6 +202,7 @@ social_test:
 social_test_image: fmb/Image-(1).jpg
 social_title: Social
 social_intro: 'See what we''re up to'
+trail_map_url: 'https://goo.gl/maps/PGpAWAH4KePrF3jP9'
 ---
 #Welcome to the gorgeous Fiddle Ridge
 Fiddle Ridge is located 10 minutes west of Hinton, AB at the edge of Jasper National Park, overlooking the Rocky Mountains.

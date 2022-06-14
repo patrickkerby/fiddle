@@ -45,7 +45,7 @@
                                     </ul>                    
                                 {{ /if }}
                                 <p class="text-medium">{{ partner_description }}</p>
-                                <a class="text-small external-url" href="{{ partner_url }}">Visit Website</a>
+                                <a class="text-small external-url" href="{{ partner_url }}" target="_blank">Visit Website</a>
                             </div>
                             <img class="bg" src="{{ partner_bg }}" />
                         </div>
@@ -59,14 +59,24 @@
     <div class="content">
         <span class="section-label">{{ map_title }}</span>
         <h2>{{ map_intro }}</h2>
-        <a class="directions text-small external-url" href="{{ directions_url }}" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 7L3 4V17L9 20L15 17L21 20V7L15 4L9 7Z" stroke="#618B4A" stroke-width="2"/>
-                <path d="M15 4V17.5" stroke="#618B4A" stroke-width="2"/>
-                <path d="M9 7V20" stroke="#618B4A" stroke-width="2"/>
-            </svg>
-            Get Directions
-        </a>
+        <div class="links">
+            <a class="directions text-small external-url" href="{{ directions_url }}" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 7L3 4V17L9 20L15 17L21 20V7L15 4L9 7Z" stroke="#618B4A" stroke-width="2"/>
+                    <path d="M15 4V17.5" stroke="#618B4A" stroke-width="2"/>
+                    <path d="M9 7V20" stroke="#618B4A" stroke-width="2"/>
+                </svg>
+                Get Directions
+            </a>
+            <a class="directions text-small external-url" href="{{ trail_map_url }}" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 7L3 4V17L9 20L15 17L21 20V7L15 4L9 7Z" stroke="#618B4A" stroke-width="2"/>
+                    <path d="M15 4V17.5" stroke="#618B4A" stroke-width="2"/>
+                    <path d="M9 7V20" stroke="#618B4A" stroke-width="2"/>
+                </svg>
+                Folding Mountain Trail Map
+            </a>
+        </div>
     </div>
     <div id="map_visual">
         {{ partners }}

@@ -693,10 +693,15 @@ opacity: 1;
   margin: 0;
 }
 
+.map .links {
+  flex-direction: row;
+}
+
 .map .external-url {
   color: #618B4A;
   border-color: #618B4A;
   padding: 0 0 0.4rem 0;
+  margin: 1.5rem 2rem 0 0;
   transition: all 0.5s ease;
 }
 
@@ -765,6 +770,10 @@ opacity: 1;
 }
 
 @media (max-width: 580px) {
+  .map .links {
+    flex-direction: column;
+  }
+
   #map_visual {
     margin-top: 1.5rem;
     padding-bottom: 4.5rem;

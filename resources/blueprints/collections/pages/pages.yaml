@@ -244,6 +244,14 @@ sections:
           listable: hidden
           instructions_position: above
       -
+        handle: trail_map_url
+        field:
+          display: 'Trail Map URL'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+      -
         handle: map_image
         field:
           mode: list
