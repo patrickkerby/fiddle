@@ -1,4 +1,11 @@
-<section class="intro-banner default" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ header_background_image }}');">
+{{ if banner_image }}
+  <section class="intro-banner default" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ banner_image }}');">
+{{ else }}
+  {{ get_content from="/" }}
+    <section class="intro-banner default" style="background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ background_image }}');">
+  {{ /get_content }}
+{{ /if }}
+
   <div class="content">
       <h1 class="flexible">{{ title }}</h1>
   </div>
