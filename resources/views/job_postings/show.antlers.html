@@ -13,9 +13,10 @@
 <section class="default-content">
   <a class="back-home" href="{{ parent:url }}">Back to {{ parent:title }}</a>
   <h2>{{ title }}</h2>
-  <div class="meta">
-    {{ partner_selection }} {{ title }} {{ /partner_selection }} {{ job_type }}
+  <div class="meta text-small">
+    {{ partner_selection }} {{ title }} {{ /partner_selection }} <span class="job_type">{{ job_type }}</span>
   </div>
+  <div class="posted"><p><strong>Posted {{ date }}</strong></p></div>
   <div class="content">
     {{ job_description }}
   </div>

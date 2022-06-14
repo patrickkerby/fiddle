@@ -47,7 +47,7 @@ h5 {
   text-transform: uppercase;
 }
 
-nav, p, li, a, span {
+nav, p, li, a, span, div {
   font-family: 'sofia-pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
   font-size: 1.5rem; /* 24px */
@@ -1285,7 +1285,8 @@ section.job_postings .content .listings li a h3 {
   top: 0.75rem;
 }
 
-.listings li a .meta {
+.listings li a .meta,
+.job_postings .meta {
   width: 100%;
   font-size: 0.875rem;
   color: #40531b;
@@ -1293,7 +1294,8 @@ section.job_postings .content .listings li a h3 {
   align-items: center;
 }
 
-.listings li a .meta span.job_type {
+.listings li a .meta span.job_type,
+.job_postings .meta span.job_type {
   color: rgba(38, 39, 39, 0.6);
   font-size: 0.875rem;
   font-weight: 400;
@@ -1301,7 +1303,8 @@ section.job_postings .content .listings li a h3 {
   margin-left: 0.5rem;
 }
 
-.listings li a .meta span.job_type::before {
+.listings li a .meta span.job_type::before,
+.job_postings .meta span.job_type::before {
   display: inline-flex;
   content: "";
   width: 4px;
@@ -1320,6 +1323,16 @@ section.job_postings .content .listings li a h3 {
   position: absolute;
   left: 0.5rem;
 }
+
+.job_postings h2 {
+  margin-bottom: 0;
+}
+
+.job_postings .meta {
+  margin-bottom: 2rem;
+}
+
+
 
 @media (max-width: 940px) {
   section.job_postings .content {  
