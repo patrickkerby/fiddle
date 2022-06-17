@@ -180,9 +180,13 @@ li {
   display: none;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 880px) {
   .mobile-display {
     display: block;
+  }
+
+  .desktop-only {
+    display: none;
   }
 
   .row {
@@ -553,39 +557,38 @@ opacity: 1;
   .partners .content {
     width: 100%;
     margin-bottom: 0;
-    flex-direction: column-reverse;
     background-color: unset;
     position: relative;
     overflow: visible;
-  }
-
-  .tabs > [type=radio] + label + * {
-    width: 100%;
-    order: 1;
-    margin-bottom: 4rem;
-    flex-direction: row-reverse;
-    /* height: 100%; */
+    flex-direction: row;
   }
 
   .tabs > [type=radio]:not(:checked) + label + * {
     opacity: 0;
   }
 
-  .tabs > [type=radio]:not(:checked) + label + div.content {
-    height: 0;
-    margin: 0;
-  }
-
   .partners nav label:hover,
   .tabs > [type=radio]:not(:checked) + label:hover {
     padding-left: 0;
   }
+
+  .partners nav label::before,.partners nav label::after {
+    left: unset;
+    right: 0.25rem;
+    transform: rotate(-45deg);
+    height: 0.75rem;
+    opacity: 1;
+    width: 0.75rem;
+  }
+  
+  .partners nav label::after {
+    top: 1.8rem;
+  }
   
   .partners .content div {
     color: #262727;
-    position: relative;
     margin: 0;
-    z-index: 1090;
+    position: static;
   }
 
   .partners nav li:hover {
@@ -639,21 +642,61 @@ opacity: 1;
     opacity: 1;
   }
 
-  .partners svg {
-    max-width: 175px;
-    max-height: 5rem;
-    margin: 0 0 1.5rem 1.5rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-
-  .partners img.bg {
+  .partners img {
     position: static;
     height: auto;
     width: 50%;
     opacity: 1;
     margin: 0 1.5rem 0 0;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* TEST SHIT */
+
+  .tabs {
+    overflow: hidden;
+ }
+  .tab {
+    width: 100%;
+    overflow: hidden;
+ }
+
+ .tab-label:hover {
+    padding-left: 2.5rem;
+   /* Icon */
+ }
+
+  .tab-content {
+    max-height: 0;
+    padding: 0;
+    transition: all 0.35s;
+ }
+
+ .tab-content svg {
+   opacity: 0;
+   transition: ease-in-out 0.5s opacity;
+ }
+
+  input:checked + .tab-label::after,
+  input:checked + .tab-label::before {
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+ }
+  input:checked ~ .tab-content {
+    max-height: 100vh;
+    margin-bottom: 4rem;
+ }
+
+  input:checked ~ .tab-content svg {
+    max-width: 175px;
+    max-height: 5rem;
+    margin: 0 0 1.5rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s opacity;
   }
 }
 
@@ -663,17 +706,17 @@ opacity: 1;
     margin: 3.5rem auto 0 auto;
   }
 
-  .tabs > [type=radio] + label + * {
-    flex-direction: column-reverse;
+  .partners .content {
+    flex-direction: column;
   }
 
-  .partners img.bg {
+  .partners img {
     width: 100%;
     margin: 0 0 1.5rem 0;
     max-height: 240px;
   }
   
-  .partners svg {
+  input:checked ~ .tab-content svg {
     margin: -8rem auto 2.5rem 1.5rem;
     position: relative;
   }

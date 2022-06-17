@@ -19,7 +19,7 @@
             <span class="section-label">{{ partners_title }}</span>
             <h2>{{ partners_intro }}</h2>
             <div>
-                <nav class="tabs">
+                <nav class="tabs desktop-only">
                     {{ partners }}
                         <input type="radio" id="tab-1-{{ index }}" name="tab-group-1" {{ if index === 0  }} checked {{ /if }}>
                         <label for="tab-1-{{ index }}">{{ partner_name }} <span>{{ partner_category }}</span></label>
@@ -50,6 +50,42 @@
                             <img class="bg" src="{{ partner_bg }}" />
                         </div>
                     {{ /partners }}
+                </nav>
+                <nav class="tabs mobile-display">
+                    {{ partners }}
+
+                    <div class="tab">
+                        <input type="radio" id="rd{{ count }}" name="rd">
+                        <label class="tab-label" for="rd{{ count }}">{{ partner_name }} <span>{{ partner_category }}</span></label>
+                        <div class="tab-content content">
+                            <img class="" src="{{ partner_bg }}" />
+                            <div>
+                                {{  if partner_logo }}
+                                    {{ svg src="{{ partner_logo }}" }}
+                                {{ /if }}
+                                <h2>{{ partner_name }} </h2>
+                                {{ if social_media }}
+                                    <ul class="social_media">
+                                    {{ social_media }} 
+                                        {{ if instagram }}
+                                            <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}">{{ instagram }}</a></li>
+                                        {{ /if }}
+                                        {{ if facebook }}
+                                            <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}">{{ facebook }}</a></li>
+                                        {{ /if }}
+                                        {{ if twitter }}
+                                            <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}">{{ twitter }}</a></li>
+                                        {{ /if }}
+                                    {{ /social_media }}
+                                    </ul>                    
+                                {{ /if }}
+                                <p class="text-medium">{{ partner_description }}</p>
+                                <a class="text-small external-url" href="{{ partner_url }}" target="_blank">Visit Website</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    {{ /partners }}
+                                     
                 </nav>
             </div>
         </div>
