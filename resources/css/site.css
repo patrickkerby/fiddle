@@ -5,12 +5,15 @@
 html {
   overflow-x: hidden;
   font-size: 100%;
+  width: 100%;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   color: #262727;
   background: #f8f8f8;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Typography */
