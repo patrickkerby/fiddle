@@ -492,7 +492,7 @@ opacity: 1;
   margin: 1.5rem auto 0 0;
   padding: 0 2.5rem 0.25rem 0;
   display: inline-flex;
-  background: url("images/icon_arrow-right.svg") no-repeat right 0;
+  background: url("images/icon_arrow-right-white.svg") no-repeat right 0;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -1185,10 +1185,6 @@ button.slick-next::after {
   z-index: 2;
 }
 
-/* .grid div:nth-child(1) {
-  padding-top: 16rem;
-} */
-
 #stream1 div:nth-of-type(2) {
   grid-column: 2 / span 2;
 }
@@ -1203,11 +1199,6 @@ button.slick-next::after {
   /* position: relative; */
   top: -13rem;
 }
-
-/* .grid div:nth-child(3) span.username,
-.grid div:nth-child(7) span.username {
-  bottom: 11rem;
-} */
 
 #stream1 div:nth-of-type(4),
 #stream2 div:nth-of-type(4) {
@@ -1289,12 +1280,17 @@ button.slick-next::after {
     margin-top: 1rem;
   }
 
+  .grid #stream1 div:nth-child(3),
+  .grid #stream2 div:nth-child(3) {
+    top: unset;
+  }
+
   .social .grid div,
   .social #stream1 div,
   .social #stream2 div {
     position: relative;
-    top: 0;
-    bottom: 0;
+    top: unset;
+    bottom: unset;
     grid-column: auto;
     width: 100%;
     height: 100%;
