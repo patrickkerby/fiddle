@@ -1295,6 +1295,7 @@ button.slick-next::after {
     width: 100%;
     height: 100%;
     padding-bottom: 100%;
+    margin: 0;
   }
 
   .social h2, .social span.section-label {
