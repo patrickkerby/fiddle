@@ -548,6 +548,10 @@ opacity: 1;
     line-height: 1;
   }
 
+  .partners .social_media {
+    margin: 0.5rem 0 1rem -0.5rem;
+  }
+
   .partners nav {
     margin-bottom: 0;
     margin-left: 0;
@@ -612,11 +616,12 @@ opacity: 1;
     padding-left: 0;
     text-indent: -9999999999px;
     margin-right: 0;
-    width: 1.5rem;
   }
 
   .partners .social_media li a {
     padding: 0.25rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .social_media li.twitter {
@@ -635,11 +640,45 @@ opacity: 1;
     margin-bottom: 1.5rem;
     color: #618B4A;
     border-bottom: solid 1px #618B4A;
-    background-image: url("images/icon_arrow-right-green.svg");
-    background-position: right 0;
-    background-repeat: no-repeat;
-    background-size: auto;
     opacity: 1;
+    background: none;
+    position: relative;
+    padding-right: 1.75rem;
+  }
+
+  .partners a.external-url::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 30%;
+    right: 0;
+    border-style: solid;
+    border-color: #618B4A;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  .partners a.external-url::after {
+    content: '';
+    display: block;
+    top: 40%;
+    right: 0;
+    border-style: solid;
+    border-color: #618B4A;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  .partners a.external-url::before { 
+    transform: rotate(45deg); 
+  }
+  
+  .partners a.external-url::after { 
+    width: 1.25rem;
+    height: 0;
+    border-width: 2px 0 0 0;
   }
 
   .partners img {
@@ -685,7 +724,7 @@ opacity: 1;
  }
   input:checked ~ .tab-content {
     max-height: 100vh;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
  }
 
   input:checked ~ .tab-content svg.partner-logo {
@@ -717,8 +756,9 @@ opacity: 1;
   }
   
   input:checked ~ .tab-content svg.partner-logo {
-    margin: -8rem auto 2.5rem 1.5rem;
+    margin: -7.5rem auto 2.5rem 1rem;
     position: relative;
+    max-width: 130px;
   }
 }
 
