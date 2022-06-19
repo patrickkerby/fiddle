@@ -68,13 +68,13 @@
                                     <ul class="social_media">
                                     {{ social_media }} 
                                         {{ if instagram }}
-                                            <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}">{{ instagram }}</a></li>
+                                            <li class="instagram"><a target="_blank" class="text-small" href="https://instagram.com/{{ instagram }}"><img src="css/images/Instagram.svg" /></a></li>
                                         {{ /if }}
                                         {{ if facebook }}
-                                            <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}">{{ facebook }}</a></li>
+                                            <li class="facebook"><a target="_blank" class="text-small" href="https://facebook.com/{{ facebook }}"><img src="css/images/Facebook.svg" /></a></li>
                                         {{ /if }}
                                         {{ if twitter }}
-                                            <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}">{{ twitter }}</a></li>
+                                            <li class="twitter"><a target="_blank" class="text-small"    href="https://twitter.com/{{ twitter }}"><img src="css/images/Twitter.svg" /></a></li>
                                         {{ /if }}
                                     {{ /social_media }}
                                     </ul>                    
@@ -126,7 +126,7 @@
         <div>
             <img src="{{ map_image }}" />
             {{ partners }}
-                <span class="mobile-display" style="bottom:{{ map_y }}%; right: {{ map_x }}%;"> {{ increment:again from="1" }}</span>                
+                <span class="mobile-display-small" style="bottom:{{ map_y }}%; right: {{ map_x }}%;"> {{ increment:again from="1" }}</span>                
             {{ /partners }}
         </div>
     </div>
