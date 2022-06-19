@@ -631,8 +631,18 @@ opacity: 1;
     padding: 0.25rem;
     width: 2rem;
     height: 2rem;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .partners .social_media li a img {
+    width: 1rem;
+    height: 1rem;
+    margin: auto;
+  }
+/* 
   .social_media li.twitter a {
     background: url("images/Twitter.svg") no-repeat center center;
   }
@@ -643,7 +653,7 @@ opacity: 1;
 
   .social_media li.instagram a {
     background: url("images/Instagram.svg") no-repeat center center;
-  }
+  } */
 
   .partners a.external-url {
     margin-bottom: 1.5rem;
